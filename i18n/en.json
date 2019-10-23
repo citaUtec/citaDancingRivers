@@ -1,0 +1,435 @@
+{
+
+  "main_title": "AMAZON",
+  "main_subtitle": "From the Andes to the Atlantic",
+
+  "intro_title": "Introduction",
+  "intro_par_1": "The Amazon is a fundamental region for the ecological equilibrium worldwide since it\nrepresents more than half of the tropical humid forest of the planet and is the largest\ntropical forest in the world. In addition, it has more than 30 000 species of plants, almost 2\n000 species of fish, 60 species of reptiles, 35 families of mammals and approximately 1 800\nspecies of birds in the process of registration.",
+  "intro_par_2": "This diversity of species extends through the 7 million km² that covers the Amazon basin,\nwhich is crossed by a diversity of rivers that are responsible for transporting water and\nsediments, connecting the Andes with the Amazonian plain.",
+
+  "intro_subtitle": "The Amazon is a river in South America",
+
+  "dancingRivers_par": "Through time rivers move, create erosion, deposit sediments and, consequently, change their shape. However, these movements are different for each river, since each one has specific characteristics and dynamics. In Dancing Rivers you will find information on the methodologies that have been developed and applied to know and get a better understanding of the physical dynamics of the main Amazonian rivers.",
+  "dancingRivers_par2": "In Dancing Rivers you will find information on the methodologies that have been developed and applied to know and get a better understanding of the physical dynamics of the main Amazonian rivers.",
+  "dancingRivers_subtitle": "The science behind the movements of rivers",
+
+  "storytelling_subtitle": "The Amazon is a river in South America",
+  "storytelling_par": "Our scientific spirit leads us to want to understand the mysterious behavior of Amazonian\nrivers. In this way, we find multiple stories and looks that are woven around them:\nexperiences, affections and knowledge of the population that lives on its banks and that\nhave been cultivating for many years. Rivers make up our stories, and these stories also make up our rivers. This is a space to\nshare them. And you, what story do you have?",
+  "storytelling_par2": "Rivers make up our stories, and these stories also make up our rivers. This is a space to\nshare them. And you, what story do you have?",
+
+  "portal_link": "Learn more about our portal >",
+
+  "dancingRivers_title": "Dancing Rivers",
+  "storytelling_title": "River Stories",
+
+  "footer_address": "Jr. Medrano Silva 165 Barranco",
+  "footer_phone_annex": "P. (01) 2305020 Annex 4295",
+  "footer_web": "W. http://www.cita.utec.edu.pe/",
+  "footer_mail": "C. cita@utec.edu.pe",
+  "footer_copy-logo": "Copyright © 2019 CITA-UTEC. ",
+  "footer_copyright": " All rights reserved.",
+
+  "side-bar-right-title": "Content",
+  "side-bar-left-title": "Content",
+
+  "rivers_menu_option_title_id": "Rivers",
+  "morphometrics_menu_option_title_id": "Morphometrics",
+  "field_measurements_menu_option_title_id": "Field Measurements",
+  "amazon_forests_menu_option_title_id": "Amazon Forests",
+  "biodiversity_menu_option_title_id": "Biodiversity",
+  "drone_menu_option_title_id": "Drone Flights",
+  "amazonas_submenu_option_title_id": "Amazonas",
+  "huallaga_submenu_option_title_id": "Huallaga",
+  "marañon_submenu_option_title_id": "Marañon",
+  "ucayali_submenu_option_title_id": "Ucayali",
+  "width_submenu_option_title_id": "Average Width",
+  "sinuosity_submenu_option_title_id": "Sinuosity",
+  "arc_wavelength_submenu_option_title_id": "Arc Wavelength",
+  "migration_submenu_option_title_id": "Migration",
+  "erosion_submenu_option_title_id": "Erosion - Deposition",
+  "water_level_submenu_option_title_id": "Water Levels",
+  "flow_rate_submenu_option_title_id": "Flow Rate",
+  "hydrodynamic_submenu_option_title_id": "Flow Velocity",
+  "dunes_submenu_option_title_id": "Dunes",
+  "bedload_submenu_option_title_id": "Bedload",
+  "sediments_submenu_option_title_id": "Sediments",
+  "lspiv_submenu_option_title_id": "LSPIV",
+  "drone_map_submenu_option_title_id": "On Map",
+  "drone_list_submenu_option_title_id": "List",
+
+  "communities_menu_option_title_id": "Communities",
+  "dem_menu_option_title_id": "DEM",
+  "malos_pasos_menu_option_title_id": "Malos Pasos",
+  "geology_menu_option_title_id": "Geology",
+  "infraestructure_menu_option_title_id": "Infrastructure",
+  "land_use_menu_option_title_id": "Land Use",
+  "protected_area_menu_option_title_id": "Protected Natural Areas",
+  "transport_menu_option_title_id": "Transport",
+  "vegetation_menu_option_title_id": "Vegetation",
+  "clear_map_menu_option_title_id": "Clear Map",
+  "language_menu_option_title_id": "Language",
+  "spanish_submenu_option_title_id": "Spanish",
+  "english_submenu_option_title_id": "English",
+
+  "help-tooltip-text": "Select a River",
+  "legend-morphometrics-title": "Legend",
+  "metrics-container-title": "Morphometrics",
+  "metrics-average-width": "Average Width",
+  "metrics-sinuosity": "Sinuosity",
+  "metrics-arc-wavelength": "Arc Wavelength",
+  "coordinates-hover-container-title": "Coordinates",
+  "coordinates-hover-container-latitude": "Latitude",
+  "coordinates-hover-container-longitude": "Longitude",
+
+  "dropdown-UHD-section-item": "Section $1",
+
+
+
+
+  "dancingR-button-mapData": "Map Data",
+
+  "amazon-home-tab": "Home",
+  "amazon-home-tab-team": "Our Team",
+
+  "amazon-home-tab-work": "¿Con quiénes trabajamos?",
+  "amazon-research-tab": "Science",
+  "amazon-research-tab-rivers": "Rivers",
+  "amazon-research-tab-sediments": "Sediments",
+  "amazon-research-tab-confluence": "Confluence",
+
+  "amazon-methodology-tab": "Methodology",
+  "amazon-methodology-tab-remote-sensing": "Remote Sensing",
+  "amazon-methodology-tab-field-measurements": "Field Measurements",
+  "amazon-methodology-tab-numeric-modeling": "Numerical Modeling",
+  "amazon-data-tools-tab": "Data",
+  "amazon-publications-tab": "Publications",
+  "amazon-publications-tab-handbooks": "Handbooks",
+  "amazon-publications-tab-newsletters": "Newsletters",
+  "amazon-publications-tab-papers": "Papers",
+  "amazon-publications-tab-workshops-materials": "Workshop Material",
+  "amazon-publications-tab-tutorials": "Tutorials",
+  "amazon-publications-tab-infographics": "Infographics",
+  "amazon-education-tab": "Education",
+  "amazon-education-tab-work-other-groups": "Collaborations",
+  "amazon-education-tab-workshops": "Workshops",
+
+
+
+
+  "dancingR-title-word-dancing-rivers": "Dancing Rivers ",
+  "dancingR-title-word-amazon-basin": "in the Amazon Basin",
+  "dancingR-subtitle": "The science behind the movements of rivers",
+  "dancingR-gratitude-word-by": "created by",
+  "dancingR-gratitude-word-contribution": "in contribution with",
+  "dancingR-dancingRivers-description": "This portal includes the research, analysis and methodology developed to characterize the\nplanimetric morphodynamics (spatial analysis with remote sensing) and altimetry\n(description of river bedforms and sediment transport) of the main Amazonian rivers:\nMarañon, Huallaga, Ucayali and Amazonas, with the purpose of knowing and get a better\nunderstanding of their physical dynamics.",
+  "dancingR-dancingRivers-description-2": "The research was carried out within the framework of the research project \"Scientific\nAssessment of River Form and Flow: Baseline Information for Infrastructure Guidelines in\nthe Peruvian Amazon\".",
+  "dancingR-moore-description": "The project, funded by the Gordon and Betty Moore Foundation, seeks to understand the\ndynamics of water and sediment transport for the morphological description of Amazonian\nrivers and their interrelation with biodiversity and Amazonian communities, in order to\nforesee the impacts of intervention with infrastructure and generate a baseline for the\nstudy of the Amazonian rivers.",
+
+  "dancingR-moore-link-web": "Visit website",
+  "dancingRivers-subtitle1": "The science behind the movements of rivers",
+  "dancingRivers-subtitle2": "The science behind the movements of rivers",
+  "dancingRivers-subtitle3": "The science behind the movements of rivers",
+
+  "dancingR-team-word-our": "Our ",
+  "dancingR-team-word-team": " Team",
+  "dancingR-team-coordination": "General Coordination",
+  "dancingR-team-researchers": "Postdoctoral Researchers",
+  "dancingR-team-field": "Field Team",
+  "dancingR-team-GIS": "GIS Team",
+  "dancingR-team-technology": "Technology Team",
+
+  "dancingR-teams-generalCoordination": "General Coordination",
+  "dancingR-teams-communications": "Communications",
+  "dancingR-teams-mainResearchers": "Postdoctoral Researchers",
+  "dancingR-teams-gisTeam": "GIS Team",
+  "dancingR-teams-fieldTeam": "Field Team",
+  "dancingR-teams-technologyTeam": "Technology Team",
+
+
+
+
+  "dancingR-teams-position-jorgeAbad": "Executive Director \n",
+  "dancingR-teams-position-lucianaVasquez": "Project Coordinator\n",
+  "dancingR-teams-position-davidBarreto": "Project Coordinator\n",
+  "dancingR-teams-position-taniaRojas": "Financial Coordinator\n",
+  "dancingR-teams-position-evelynCalderon": "Communication Specialist\n",
+  "dancingR-teams-position-rogerMarquez": "Graphic Designer",
+  "dancingR-teams-position-kensukeNaito": "Fluvial Morphodynamics and Sediment Transport\n",
+  "dancingR-teams-position-carlosCanas": "Ecology and Biodiversity\n",
+  "dancingR-teams-position-gabrielaFlores": "GIS Coordinator\n",
+  "dancingR-teams-position-aracellyMallma": "Investigation Assistant\n",
+  "dancingR-teams-position-jesusMarin": "Investigation Assistant\n",
+  "dancingR-teams-position-gerardoValencia": "Technological Developer\n",
+  "dancingR-teams-position-jaimeDelAlcazar": "Technological Developer\n",
+  "dancingR-teams-position-leoGuerrero": "Field Coordinator\n",
+  "dancingR-teams-position-henryValverde": "Investigation Assistant\n",
+  "dancingR-teams-position-yulissaEstrada": "Water and Sediment Quality Coordinator",
+  "dancingR-teams-position-hernanChicchon": "Investigation Assistant\n",
+  "dancingR-teams-position-bryanSantillan": "Investigation Assistant\n",
+  "dancingR-teams-position-florFuentes": "Investigation Assistant\n",
+  "dancingR-teams-position-greciaValdivia": "Investigation Assistant\n",
+  "dancingR-teams-position-paulaSisniegas": "Investigation Assistant\n",
+  "dancingR-teams-position-froilanRodas": "Investigation Assistant\n",
+  "dancingR-teams-position-joseVelarde": "Technology and Lab Coordinator\n",
+  "dancingR-teams-position-juniorMontoya": "Technological Developer\n",
+  "dancingR-teams-position-lynnMarin": "Technological Developer\n",
+  "dancingR-teams-position-josephPena": "Technological Developer\n",
+
+
+
+
+
+
+  "dancingR-home-word-dancing": "Dancing ",
+  "dancingR-home-word-rivers": " Rivers",
+  "dancingR-home-word-moore": "Project ",
+  "dancingR-home-word-project": " \"Scientific Assessment of River Form and Flow: Baseline Information for Infrastructure Guidelines in the Peruvian Amazon\" ",
+
+  "dancingR-home-button-knowUs": "Know Us",
+
+
+
+  "dancingR-research-rivers-title": "What are the rivers?",
+  "dancingR-research-rivers-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo\n            do consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n            labore et dolore magna aliqua.",
+  "dancingR-research-rivers-more-button": "More about rivers",
+  "dancingR-research-animation-about": "Amazonas River from 1987 to 2017",
+  "dancingR-research-sediments-title": "Sediments",
+  "dancingR-research-sediments-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo\n                        do consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "dancingR-research-confluence-title": "Confluence",
+  "dancingR-research-confluence-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo\n                        do consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "dancingR-research-others-title": "Others",
+  "dancingR-research-others-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo\n                        do consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "dancingR-research-buttonSection-sediments": "Sediments",
+  "dancingR-research-buttonSection-confluence": "Confluence",
+  "dancingR-research-buttonSection-others": "Others",
+  "dancingR-research-button-moreAbout": "More about",
+
+
+
+
+
+  "dancingR-rivers-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo\n            do consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n            labore et dolore magna aliqua.",
+  "dancingR-rivers-animation-about": "Amazonas River from 1987 to 2017",
+  "dancingR-rivers-anabranching-title": "Anabranching",
+  "dancingR-rivers-anabranching-description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  "dancingR-rivers-meandering-title": "Meandering",
+  "dancingR-rivers-meandering-description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  "dancingR-rivers-connectivity-title": "Connectivity",
+  "dancingR-rivers-connectivity-description": "Los ríos amazónicos conectan los Andes con el Océano Atlántico. A lo largo de su recorrido por varios miles de kilómetros, el río tiene diferentes características geomorfológicas. En la parte alta y media, el río fluye en un valle confinado, caracterizado por tener un fondo compuesto por grandes rocas y/o cantos rodados, y atraviesa una topografía con mayores pendientes, lo cual se evidencia por las fuertes velocidades del río. La presencia de sedimentos suspendidos es escasa en este recorrido, manteniendo estas características hasta que alcanzan los pongos (sección del cauce angosta y profunda), para luego ingresar a la llanura amazónica. En ella, el río fluye en medio de un vasto valle con baja pendiente sin mayor confinamiento, moviéndose libremente e inundando estacionalmente cada año el bosque. En esta parte el río tiene menores velocidades, su cauce está formado por arenas y transporta sedimentos en suspensión que le dan un color marrón al agua. Este recorrido termina en el Océano Atlántico, en donde el río Amazonas descarga toda el agua y sedimento que ha ido recogiendo desde los Andes, los cuales son depositados al norte de Brasil, y permite la formación de los bosques de manglares que caracterizan a esta región.",
+  "dancingR-rivers-connectivity-description-2": "Los ríos conectan hábitats y ecosistemas, lo que permite que flora y fauna acuática completen su ciclo de vida. Una de las mayores evidencias se da en los peces migratorios. Esta conectividad facilita a los peces adultos acceso a hábitats críticos, como zonas de reproducción, alimentación y crecimiento. Algunos peces deben recorrer miles de kilómetros río arriba hasta las cabeceras para reproducirse en el piedemonte andino. Otras especies que habitan cochas y tributarios del bosque inundable, migran menores distancias hacia las confluencias con los grandes ríos.",
+  "dancingR-rivers-connectivity-description-3": "Los ríos amazónicos controlan muchos procesos biológicos y ecológicos. El no tener en cuenta esta característica de conexión al momento del desarrollo de infraestructura, impide identificar los impactos a gran escala que se pueden estar desarrollando.",
+  "dancingR-rivers-waterSediments-title": "Water and Sediments",
+  "dancingR-rivers-waterSediments-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo\n                        do consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n                        labore et dolore magna aliqua.",
+  "dancingR-rivers-button-moreAbout": "More about",
+
+
+
+  "dancingR-rivers-riverTypes-title": "Tipos de Ríos",
+  "dancingR-rivers-riverTypes-description": "En la cuenca amazónica hay, principalmente, dos tipos de ríos: los meándricos (p.e. Huallaga, Ucayali) y los multicanales (p.e. Marañón, Amazonas). El comportamiento morfodinámico y altimétrico de estos dos ríos es diferente, por lo que la evaluación de diferentes parámetros físicos dependerá del tipo de sistema fluvial.\nLos ríos meándricos son aquellos que forman curvas en su trayecto, las cuales se van formando debido al ajuste del canal a la pendiente. Los canales evolucionan con el tiempo a partir de la migración de las curvas y presentan, por un lado, una zona de erosión y, por el lado contrario, una zona de deposición. Estos ríos se caracterizan por ser ríos con alta sinuosidad y migración a lo largo de su curso, así como la presencia de paleocauces.\nLos ríos multicanal son aquellos que presentan una red de canales divergentes y convergentes que forman islas estables con vegetación. Estas islas permiten albergar centros poblados y actividades agrícolas sobre ellas, como en el caso de muchas zonas a lo largo del río Amazonas.",
+
+
+
+  "dancingR-rSensing-parameters-title": "Analysis Parameters",
+  "dancingR-rSensing-criterion-title": "Analysis Criteria",
+  "dancingR-rSensing-processing-title": "Processing",
+  "dancingR-rSensing-mapData-title": "Map Data",
+  "dancingR-rSensing-parameters-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo\n                do consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n                labore et dolore magna aliqua.",
+  "dancingR-rSensing-criterion-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo\n                do consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n                labore et dolore magna aliqua.",
+  "dancingR-rSensing-processing-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo\n                do consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n                labore et dolore magna aliqua.",
+  "dancingR-rSensing-mapData-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo\n                do consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n                labore et dolore magna aliqua.",
+
+
+
+
+
+  "field-title-blue-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo\n                do consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n                labore et dolore magna aliqua.",
+
+
+
+
+  "dancingR-dataTools-data-title": "Data",
+  "dancingR-dataTools-tools-title": "Tools",
+  "dancingR-dataTools-data-linkMapData": "Ingresar al Visualizador >",
+  "dancingR-dataTools-tools-link-1": "Guide_1",
+  "dancingR-dataTools-tools-link-2": "Guide_2",
+
+  "dancingR-dataTools-data-description": "Desde el 2017 se viene investigando, compilando y analizando varios parámetros físicos a lo largo de los principales ríos amazónicos: Marañón, Huallaga, Ucayali y Amazonas.",
+  "dancingR-dataTools-tools-description-1": "El Toolbox permite realizar el pre procesamiento de imágenes satelitales para la obtención de una capa vectorial correspondiente al río y su línea central. ",
+  "dancingR-dataTools-tools-description-2": "MStat es una herramienta que permite la caracterización de ríos meándricos mediante la cuantificación de la longitud de onda, amplitud, sinuosidad y curvatura del canal.",
+  "dancingR-dataTools-tools-description-3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo\n                do consequat. ",
+
+  "dancingR-dataTools-data-subtitle-1": "Map Data",
+  "dancingR-dataTools-tools-subtitle-1": "Pre procesamiento de imágenes satelitales",
+  "dancingR-dataTools-tools-subtitle-2": "MStaT – Meander Statistics Toolbox",
+
+
+
+
+
+  "dancingR-home-statistics-number-1": "5000",
+  "dancingR-home-statistics-info-1": "Kilometers studied",
+  "dancingR-home-statistics-number-2": "30",
+  "dancingR-home-statistics-info-2": "Years of multitemporal analysis",
+  "dancingR-home-statistics-number-3": "2017",
+  "dancingR-home-statistics-info-3": "Start of field measurements",
+  "dancingR-home-statistics-number-4": "20+",
+  "dancingR-home-statistics-info-4": "Workshops and talks",
+
+
+
+
+
+
+  "dancingR-handbooks-main-title": "Handbooks",
+  "dancingR-handbooks-main-description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
+
+  "dancingR-handbooks-title-1": "Methodological Guide",
+  "dancingR-handbooks-description-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo\n                        do consequat.",
+  "dancingR-handbooks-title-2": "Methodological Guide",
+  "dancingR-handbooks-description-2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo\n                        do consequat.",
+  "dancingR-handbooks-title-3": "Methodological Guide",
+  "dancingR-handbooks-description-3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo\n                        do consequat.",
+  "dancingR-handbooks-title-4": "Methodological Guide",
+  "dancingR-handbooks-description-4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo\n                        do consequat.",
+
+  "dancingR-handbooks-link-1": "Download",
+  "dancingR-handbooks-link-2": "Download",
+  "dancingR-handbooks-link-3": "Download",
+  "dancingR-handbooks-link-4": "Download",
+
+
+
+  "dancingR-newsletters-main-title": "Newsletters",
+  "dancingR-newsletters-main-description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
+
+  "dancingR-newsletters-title-1": "Metodología de línea base geomorfológica para los ríos de la Hidrovía Amazónica. Aplicación en el río Huallaga",
+  "dancingR-newsletters-description-1": "Comprender la dinámica de los ríos es fundamental para una correcta elaboración de proyectos de infraestructura fluvial. Ante el desarrollo del proyecto Hidrovía Amazónica, el equipo investigador del CITA ha elaborado metodologías hidrogeomorfológicas que permitan entender los patrones físicos presentes en los principales ríos amazónicos. Este documento resume los resultados encontrados, así como recomendaciones técnicas a considerar para un adecuado estudio.",
+  "dancingR-newsletters-document-name-1": "Descargar",
+  "dancingR-newsletters-title-2": "Mejores prácticas para el estudio de los ríos amazónicos frente al desarrollo de infraestructura. Caso EIA-d Hidrovía Amazónica",
+  "dancingR-newsletters-description-2": "El presente análisis representa un estudio científico que tiene como objetivo mejorar el entendimiento de la geomorfología de los ríos amazónicos, de manera que se genere el menor número de impactos en los proyectos de infraestructura. En ese sentido, este estudio demuestra que el EIA-d presentado para el proyecto Hidrovía Amazónica carece de rigurosidad técnica y científica, los cuales son requisitos indispensables antes de implementar este tipo de proyectos.",
+  "dancingR-newsletters-document-name-2": "Boletin-N2-CITA ",
+
+
+
+
+
+
+  "dancingR-tutorials-main-title": "Tutorials",
+  "dancingR-tutorials-main-description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
+
+  "dancingR-tutorials-title-1": "Guía para la Obtención de Imágenes Satelitales en Google Earth Engine mediante el Code Editor",
+  "dancingR-tutorials-description-1": "Se detalla el procedimiento a seguir con el Code Editor de Google Earth Engine para la descarga de imágenes satelitales, aplicando distintos índices de detección de superficies con cobertura de agua.",
+  "dancingR-tutorials-document-name-1": "Download",
+  "dancingR-tutorials-title-2": "Guía para el Preprocesamiento de Imágenes Satelitales con el GIS Toolbox",
+  "dancingR-tutorials-description-2": "El objetivo del GIS Toolbox es automatizar el pre procesamiento de imágenes satelitales, facilitando la obtención del polígono y línea central del río a partir de una imagen satelital con un índice de detección de superficies con cobertura de agua.",
+  "dancingR-tutorials-document-name-2": "Download",
+  "dancingR-tutorials-title-3": "Guía Metodológica para la Caracterización de Ríos Meándricos y Multicanal",
+  "dancingR-tutorials-description-3": "La presente guía describe la metodología para la caracterización de ríos meándricos y multicanal para  la obtención de distintos parámetros físicos según cada tipo de río. Se destacan los criterios a tomar en cuenta al realizar un estudio multitemporal y la importancia de estos para el análisis y monitoreo de los ríos.",
+  "dancingR-tutorials-document-name-3": "Download",
+  "dancingR-tutorials-title-4": "Guía Metodológica de la Unidad Hidrodinámica",
+  "dancingR-tutorials-description-4": "La Unidad hidrodinámica permite obtener información de la sección de un río, batimetría, sus velocidades y caudal. Mediante la presente guía se detallan los procedimiento y fases de trabajo para la planificación logística, medición en campo, procesamiento de información y presentación de resultados.",
+  "dancingR-tutorials-document-name-4": "Download",
+  "dancingR-tutorials-title-5": "Guía Metodológica de la Unidad Hidrogeomorfológica",
+  "dancingR-tutorials-description-5": "La Unidad hidrogeomorfológica permite obtener información del movimiento del fondo del río, discretizando su forma en barras, dunas y rizos, midiendo así el transporte de fondo. Mediante la presente guía se detallan los procedimiento y fases de trabajo para la planificación logística, medición en campo, procesamiento de información y presentación de resultados.",
+  "dancingR-tutorials-document-name-5": "Download",
+  "dancingR-tutorials-title-6": "Guía Metodológica de la Unidad Hidrosedimentológica",
+  "dancingR-tutorials-description-6": "La Unidad hidrosedimentológica permite caracterizar los sedimentos suspendidos y de fondo que hay en un río, hallando su concentración, dispersión y granulometría. Mediante la presente guía se detallan los procedimiento y fases de trabajo para la planificación logística, obtención de muestras en campo, procesamiento de muestras en laboratorio, análisis y presentación de resultados.",
+  "dancingR-tutorials-document-name-6": "Download",
+
+
+
+
+
+
+  "dancingR-collaborations-main-title": "Collaborations",
+  "dancingR-collaborations-main-description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
+
+  "dancingR-collaborations-work-title": "¿Con quiénes trabajamos?",
+
+
+  "dancingR-collaborations-universities-title": "Universities",
+  "dancingR-collaborations-societyOrganizations-title": "Civil Society Organizations",
+  "dancingR-collaborations-governmentInstitutions-title": "Government Institutions",
+  "dancingR-collaborations-nativeCommunities-title": "Native Communities",
+
+  "dancingR-collaborations-universities-description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+  "dancingR-collaborations-societyOrganizations-description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+  "dancingR-collaborations-governmentInstitutions-description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+  "dancingR-collaborations-nativeCommunities-description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+
+
+  "dancingR-workshops-main-title": "Workshops",
+  "dancingR-workshops-main-description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
+
+  "dancingR-workshops-workshop-title-1": "Estudio de Impacto Ambiental del Proyecto Hidrovía Amazónica: Alcances y vacíos",
+  "dancingR-workshops-workshop-place-1": "Lugar: Yurimaguas",
+  "dancingR-workshops-workshop-date-1": "Fecha: 3 de julio del 2019",
+  "dancingR-workshops-workshop-title-2": "Mejores prácticas para el estudio de los ríos amazónicos frente al desarrollo de infraestructura. Caso EIA-d Hidrovía Amazónica",
+  "dancingR-workshops-workshop-place-2": "Lugar: UTEC, Lima",
+  "dancingR-workshops-workshop-date-2": "Fecha: 11 de julio del 2019",
+  "dancingR-workshops-workshop-title-3": "Estudio de Impacto Ambiental del Proyecto Hidrovía Amazónica: Alcances y vacíos",
+  "dancingR-workshops-workshop-place-3": "Lugar: Iquitos",
+  "dancingR-workshops-workshop-date-3": "Fecha: 28 de junio del 2019",
+  "dancingR-workshops-workshop-title-4": "Estudio de Impacto Ambiental del Proyecto Hidrovía Amazónica: Alcances y vacíos",
+  "dancingR-workshops-workshop-place-4": "Lugar: Pucallpa",
+  "dancingR-workshops-workshop-date-4": "Fecha: 27 de junio del 2019",
+  "dancingR-workshops-workshop-title-5": "Charla Monitoreo de ríos amazónicos ",
+  "dancingR-workshops-workshop-place-5": "Lugar: Auditorio del IIAP, Iquitos",
+  "dancingR-workshops-workshop-date-5": "Fecha: 28 de mayo de 2019",
+  "dancingR-workshops-workshop-title-6": "Curso Monitoreo de ríos amazónicos para la prevención de riesgos de desastres naturales",
+  "dancingR-workshops-workshop-place-6": "Lugar: Auditorio del IIAP, Iquitos",
+  "dancingR-workshops-workshop-date-6": "Fecha: 27 de mayo de 2019",
+  "dancingR-workshops-workshop-title-7": "Workshop: La ciencia de los ríos amazónicos",
+  "dancingR-workshops-workshop-place-7": "Lugar: UTEC, Lima",
+  "dancingR-workshops-workshop-date-7": "Fecha: 17 de abril de 2019",
+  "dancingR-workshops-workshop-title-8": "Curso-Taller Monitoreo de ríos amazónicos",
+  "dancingR-workshops-workshop-place-8": "Lugar: Auditorio del Colegio Atanasio Jauregui, Yurimaguas",
+  "dancingR-workshops-workshop-date-8": "Fecha: 15 y 16 de marzo de 2019",
+  "dancingR-workshops-workshop-title-9": "Curso-Taller Monitoreo de ríos amazónicos",
+  "dancingR-workshops-workshop-place-9": "Lugar: Universidad Nacional de la Amazonía Peruana, Iquitos",
+  "dancingR-workshops-workshop-date-9": "Fecha: 25 y 26 de febrero de 2019",
+  "dancingR-workshops-workshop-title-10": "Curso-Taller Monitoreo de ríos amazónicos",
+  "dancingR-workshops-workshop-place-10": "Lugar: Universidad Nacional de la Amazonía Peruana, Iquitos",
+  "dancingR-workshops-workshop-date-10": "Fecha: 26 y 27 de febrero de 2019",
+  "dancingR-workshops-workshop-title-11": "Curso-Taller Técnico sobre monitoreo de ríos Amazónicos",
+  "dancingR-workshops-workshop-place-11": "Lugar: Universidad Nacional de Ucayali, Pucallpa",
+  "dancingR-workshops-workshop-date-11": "Fecha: 29 de enero de 2019",
+  "dancingR-workshops-workshop-title-12": "Curso-Taller Técnico sobre monitoreo de ríos Amazónicos",
+  "dancingR-workshops-workshop-place-12": "Lugar: Universidad Nacional Intercultural de la Amazonía, Pucallpa",
+  "dancingR-workshops-workshop-date-12": "Fecha: 29 de enero de 2019",
+  "dancingR-workshops-workshop-title-13": "LSPIV: Técnica de medición de velocidades en ríos de montaña",
+  "dancingR-workshops-workshop-place-13": "Lugar: Cerro de Pasco",
+  "dancingR-workshops-workshop-date-13": "Fecha: 26 de noviembre de 2018",
+  "dancingR-workshops-workshop-title-14": "LSPIV: Técnica de medición de velocidades en ríos de montaña",
+  "dancingR-workshops-workshop-place-14": "Lugar: Tingo María",
+  "dancingR-workshops-workshop-date-14": "Fecha: 24 de noviembre de 2018",
+  "dancingR-workshops-workshop-title-15": "LSPIV: Técnica de medición de velocidades en ríos de montaña",
+  "dancingR-workshops-workshop-place-15": "Lugar: Huánuco",
+  "dancingR-workshops-workshop-date-15": "Fecha: 23 de noviembre de 2018",
+  "dancingR-workshops-workshop-title-16": "Charlas sobre el Proyecto Hidrovía Amazónica",
+  "dancingR-workshops-workshop-place-16": "Lugar: San Lorenzo",
+  "dancingR-workshops-workshop-date-16": "Fecha: 17 de noviembre",
+  "dancingR-workshops-workshop-title-17": "Charlas sobre el Proyecto Hidrovía Amazónica",
+  "dancingR-workshops-workshop-place-17": "Lugar: Saramiriza",
+  "dancingR-workshops-workshop-date-17": "Fecha: 16 de noviembre",
+  "dancingR-workshops-workshop-title-18": "Potenciales Impactos de la Hidrovía Amazónica. Una mirada interdisciplinaria",
+  "dancingR-workshops-workshop-place-18": "Lugar: Iquitos",
+  "dancingR-workshops-workshop-date-18": "Fecha: 6 de noviembre",
+  "dancingR-workshops-workshop-title-19": "Potenciales Impactos de la Hidrovía Amazónica. Una mirada interdisciplinaria",
+  "dancingR-workshops-workshop-place-19": "Lugar: Lima",
+  "dancingR-workshops-workshop-date-19": "Fecha: 30 de octubre",
+
+
+  "dancingR-research-main-title": "Science",
+  "dancingR-rivers-main-title": "What are the rivers?",
+  "dancingR-rSensing-main-title": "Remote Sensing",
+  "dancingR-dataTools-main-title": "Data",
+
+  "dancingR-research-sub-title": "El estudio de los ríos amazónicos requiere una mirada más profunda a sus características y su rol como fuente de biodiversidad",
+  "dancingR-dataTools-sub-title": "Información obtenida sobre los ríos amazónicos",
+  "dancingR-publications-sub-title": "Material elaborado acerca del estudio de ríos amazónicos.",
+  "dancingR-workshops-sub-title": "Fortalecimiento de capacidades"
+
+
+}
+

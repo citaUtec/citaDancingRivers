@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dancing Rivers</title>
+
+    <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+
+    <!--JQuery JS Script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <!--Bootstrap CSS Style-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+
+    <!--Bottom Cards section CSS Style-->
+    <link rel="stylesheet" href="css/bottom-cards-style.css">
+
+    <!-- Nav-Bar -->
+    <link rel="stylesheet" href="css/dancingRivers/dancing_rivers_navbar.css">
+    <!-- General CSS -->
+    <link rel="stylesheet" href="css/dancingRivers/dancing_rivers_general.css">
+
+    <!--Handling JS Scripts-->
+    <script src="./lib/CLDRPluralRuleParser/CLDRPluralRuleParser.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.messagestore.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.language.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.parser.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.emitter.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="./lib/history/jquery.history.js"></script>
+    <script src="./lib/url/url.min.js"></script>
+
+    <!--New layout script-->
+    <script type="text/javascript" src="./js/dancingRivers/dancingRivers.js"></script>
+
+    <script type="text/javascript" src="js/index/language_handler_dancingRivers.js"></script>
+
+<style>
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    body, html {
+        /*height: 100%;*/
+        width: 100vw;
+        /*position: absolute;*/
+        overflow-x: hidden;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(255,255,255,1);
+        scroll-behavior: smooth;
+    }
+
+    @font-face {
+        font-family: Museo-Sans-100;
+        src: url("./font/Museo Sans 100/MuseoSans-100.otf");
+    }
+    @font-face {
+        font-family: Museo-Sans-300;
+        src: url("./font/Museo Sans 300/MuseoSans-300.otf");
+    }
+    @font-face {
+        font-family: Museo-Sans-500;
+        src: url("./font/Museo Sans 500/MuseoSans-500.otf");
+    }
+    @font-face {
+        font-family: Museo-Sans-700;
+        src: url("./font/Museo Sans 700/MuseoSans-700.otf");
+    }
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+
+<div id="Header" style="position: fixed;">
+    <div class="upper-header" style="display: flex; align-items: center; justify-content: center;">
+
+        <div style="width: 74%; display: flex; align-items: center; justify-content: flex-start;">
+
+            <div style="width: 20%">
+                <a href="https://citautec.github.io/citaVisualizer/map.html#" target="_blank">
+                    <button class="map-data-button" data-i18n="dancingR-button-mapData">Map Data</button>
+                </a>
+            </div>
+
+            <div style="width: 80%; display: flex; align-items: center; justify-content: flex-end;">
+                <button id="btn_es" class="idiom-btn-1" onclick="passLanguage('es')">Español</button>
+                <button id="btn_en" class="idiom-btn-2" onclick="passLanguage('en')">English</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="NavBar" style=" display: flex; justify-content: center; align-items: center;">
+
+        <div style="width: 74%; display: flex; align-items: center; justify-content: space-between;">
+            <div style="min-width: 18%; display: flex; justify-content: flex-start; align-items: center;">
+
+                <img id="logo-dancing-rivers"  onclick="location.href='DancingRivers_Home.html'" src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/logo-rios-danzantes.png" >
+            </div>
+
+            <div style=" width: 74%; display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; justify-content: flex-end;">
+
+                <div style="width: 100%; ">
+
+                    <ul class="hList" style="display: flex; align-items: center; margin: 0;">
+                        <li>
+                            <a class="menu" >
+                                <h2  class="menu-title" onclick="location.href='DancingRivers_Home.html';"  data-i18n="amazon-home-tab">Inicio</h2>
+                                <ul class="menu-dropdown">
+                                    <li onclick="location.href='DancingRivers_Team.html';" data-i18n="amazon-home-tab-team">Nuestro Equipo</li>
+                                    <li onclick="location.href='DancingRivers_Collaborations.html';" data-i18n="amazon-home-tab-work">¿Con quienes trabajamos?</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" onclick="location.href='DancingRivers_Research.html';" data-i18n="amazon-research-tab">Investigación</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" data-i18n="amazon-methodology-tab" style="cursor: default;">Metodología</h2>
+                                <ul class="menu-dropdown">
+                                    <li onclick="location.href='DancingRivers_RemoteSensing.html';" data-i18n="amazon-methodology-tab-remote-sensing">Sensoramiento Remoto</li>
+                                    <li onclick="location.href='DancingRivers_FieldMeasurements.html';" data-i18n="amazon-methodology-tab-field-measurements" style="word-wrap: break-word;">Mediciones de campo</li>
+                                    <li data-i18n="amazon-methodology-tab-numeric-modeling">Modelamiento numérico</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" onclick="location.href='DancingRivers_DataAndTools.html';"  data-i18n="amazon-data-tools-tab">Datos</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" style="color: #00BCD4; font-family: Museo-Sans-500; cursor: default;" data-i18n="amazon-publications-tab" >Publicaciones</h2>
+                                <ul class="menu-dropdown">
+                                    <li onclick="location.href='DancingRivers_Newsletters.html';" data-i18n="amazon-publications-tab-newsletters">Boletines</li>
+                                    <li onclick="location.href='DancingRivers_Tutorials.html';" data-i18n="amazon-publications-tab-tutorials">Tutoriales</li>
+                                    <li data-i18n="amazon-publications-tab-infographics">Infografías</li>
+                                    <li data-i18n="amazon-publications-tab-handbooks">Handbooks</li>
+                                    <li data-i18n="amazon-publications-tab-papers">Papers</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" onclick="location.href='DancingRivers_Workshops.html';" data-i18n="amazon-education-tab">Educación</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<style>
+    #handbooks-intro-section{
+        width: 100vw;
+        height: 86vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 14vh;
+        /*background: linear-gradient( rgba(0,0,0,0.0), rgba(0,0,0,0.5)) , url('./img/dancingRivers/DSC_0103_2.jpg');*/
+        background: linear-gradient( rgba(0,0,0,0.0), rgba(0,0,0,0.0)) , url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/DJI_0105_2.jpg');
+        /*background-image: url('./img/dancingRivers/DSC_0103_2.jpg');*/
+        background-size: cover;
+    }
+</style>
+
+
+
+<div id="handbooks-intro-section">
+
+    <div class="intro-container-out">
+        <div class="intro-container-in">
+            <div class="intro-text-container" >
+                <div class="intro-text-container-inner">
+                    <p class="main-title-white-text" data-i18n="dancingR-handbooks-main-title"></p>
+                    <p class="main-description-white-text" data-i18n="dancingR-publications-sub-title"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<!-- Handbooks Section --->
+<div id="handbooks-section">
+
+    <div class="handbooks-section-inner">
+
+        <div class="handbooks-row-container" >
+            <div style="width: 35%;  height: 100%; overflow: hidden">
+                <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/gota-background-3.png"  style="display: flex; justify-content: center; align-items: center; width: 100%; height: auto; overflow: hidden" >
+            </div>
+            <div class="handbooks-text-column-container">
+                <div>
+                    <p class="handbooks-title-text" data-i18n="dancingR-handbooks-title-1"></p>
+                    <p class="handbooks-description-text" data-i18n="dancingR-handbooks-description-1"></p>
+                </div>
+                <div class="handbooks-link-container">
+                    <p  class="text-p-link"><a class="text-link" style="color: #0071BC; font-size: 20px; font-family: Museo-Sans-300" target="_blank" data-i18n="dancingR-handbooks-link-1">guia_metodologica.pdf </a></p>
+                    <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/icon-pdf.png"  style=" height: auto; width: 24px; margin-left: 20px; cursor: pointer;" >
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Footer Section -->
+<div id="Footer">
+
+    <div class="footer-top-container">
+        <p class="footer-text" data-i18n="footer_address">Jr. Medrano Silva 165 Barranco</p>
+        <p class="footer-text" data-i18n="footer_phone_annex">P. (01) 2305020 Anexo 4295</p>
+        <p class="footer-text" data-i18n="footer_web">W. http://www.cita.utec.edu.pe/</p>
+        <p class="footer-text" data-i18n="footer_mail">C. cita@utec.edu.pe</p>
+
+        <div class="row-flex">
+            <div class="footer-logo-container" >
+                <a href="https://www.facebook.com/CITAUTEC/" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/facebook_circle_gray.png" width="100%" height="100%"></a>
+            </div>
+            <div class="footer-logo-container">
+                <a href="https://www.youtube.com/channel/UCwC0Nzlv29aYXlZSMwXqgqw" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/youtube_circle_gray.png" width="100%" height="100%" ></a>
+            </div>
+            <div class="footer-logo-container">
+                <a href="https://twitter.com/CITA_UTEC" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/twitter_circle_gray.png" width="100%" height="100%" ></a>
+            </div>
+            <div class="footer-logo-container">
+                <a href="https://www.instagram.com/cita_utec/" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/instagram_circle_gray.png" width="100%" height="100%" ></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom-container">
+        <p class="footer-text" data-i18n="footer_copy-logo">Copyright &copy 2019 CITA-UTEC.</p>
+        <span>&nbsp;</span>
+        <span class="footer-text" data-i18n="footer_copyright">All rights reserved.</span>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

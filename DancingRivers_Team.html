@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dancing Rivers</title>
+    <!--<script type="text/javascript" src="js/bootstrap/bootstrap.bundle.min.js"></script>-->
+
+    <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+
+    <!--JQuery JS Script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <!--Bootstrap JS script-->
+    <!--<script type="text/javascript" src="js/bootstrap/bootstrap.bundle.min.js"></script>-->
+
+    <!--Bootstrap CSS Style-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+
+    <!--Bottom Cards section CSS Style-->
+    <link rel="stylesheet" href="css/bottom-cards-style.css">
+
+    <!-- Nav-Bar -->
+    <link rel="stylesheet" href="css/dancingRivers/dancing_rivers_navbar.css">
+    <!-- General CSS -->
+    <link rel="stylesheet" href="css/dancingRivers/dancing_rivers_general.css">
+
+    <!--Handling JS Scripts-->
+    <script src="./lib/CLDRPluralRuleParser/CLDRPluralRuleParser.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.messagestore.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.language.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.parser.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.emitter.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="./lib/history/jquery.history.js"></script>
+    <script src="./lib/url/url.min.js"></script>
+
+    <!--New layout script-->
+    <script type="text/javascript" src="./js/dancingRivers/dancingRivers.js"></script>
+
+    <!--Language Handler Logic JS script-->
+    <script type="text/javascript" src="js/index/language_handler_dancingRivers.js"></script>
+
+    <script type="text/javascript" src="js/index/general_web_dancingRivers.js"></script>
+
+
+    <style>
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    body, html {
+        /*height: 100%;*/
+        width: 100vw;
+        /*position: absolute;*/
+        overflow-x: hidden;
+        margin: 0;
+        /*font-family: Arial, Helvetica, sans-serif;*/
+
+        background-color: white;
+        scroll-behavior: smooth;
+        font-family: Museo-Sans-300;
+    }
+
+    @font-face {
+        font-family: Museo-Sans-100;
+        src: url("./font/Museo Sans 100/MuseoSans-100.otf");
+    }
+    @font-face {
+        font-family: Museo-Sans-300;
+        src: url("./font/Museo Sans 300/MuseoSans-300.otf");
+    }
+    @font-face {
+        font-family: Museo-Sans-500;
+        src: url("./font/Museo Sans 500/MuseoSans-500.otf");
+    }
+    @font-face {
+        font-family: Museo-Sans-700;
+        src: url("./font/Museo Sans 700/MuseoSans-700.otf");
+    }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div id="Header">
+    <div class="upper-header" >
+
+        <div style="width: 74%; display: flex; align-items: center; justify-content: flex-start;">
+
+            <div style="width: 20%">
+                <a href="https://citautec.github.io/citaVisualizer/map.html#" target="_blank">
+                    <button class="map-data-button" data-i18n="dancingR-button-mapData">Map Data</button>
+                </a>
+            </div>
+
+            <div style="width: 80%; display: flex; align-items: center; justify-content: flex-end;">
+                <button id="btn_es" class="idiom-btn-1" onclick="passLanguage('es')">Español</button>
+                <button id="btn_en" class="idiom-btn-2" onclick="passLanguage('en')">English</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="NavBar" style=" display: flex; justify-content: center; align-items: center;">
+
+        <div style="width: 74%; display: flex; align-items: center; justify-content: space-between;">
+            <div style="min-width: 18%; display: flex; justify-content: flex-start; align-items: center;">
+                <img id="logo-dancing-rivers"  onclick="location.href='DancingRivers_Home.html'" src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/logo-rios-danzantes.png" >
+            </div>
+
+            <div style=" width: 74%; display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; justify-content: flex-end;">
+
+                <div style="width: 100%; ">
+
+                    <ul class="hList" style="display: flex; align-items: center; margin: 0;">
+                        <li>
+                            <a class="menu" >
+                                <h2  class="menu-title" onclick="location.href='DancingRivers_Home.html';" style="color: #00BCD4; font-family: Museo-Sans-500" data-i18n="amazon-home-tab">Inicio</h2>
+                                <ul class="menu-dropdown">
+                                    <li onclick="location.href='DancingRivers_Team.html';" data-i18n="amazon-home-tab-team">Nuestro Equipo</li>
+                                    <li onclick="location.href='DancingRivers_Collaborations.html';" data-i18n="amazon-home-tab-work">¿Con quienes trabajamos?</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" onclick="location.href='DancingRivers_Research.html';" data-i18n="amazon-research-tab">Investigación</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" data-i18n="amazon-methodology-tab" style="cursor: default;">Metodología</h2>
+                                <ul class="menu-dropdown">
+                                    <li onclick="location.href='DancingRivers_RemoteSensing.html';" data-i18n="amazon-methodology-tab-remote-sensing">Sensoramiento Remoto</li>
+                                    <li onclick="location.href='DancingRivers_FieldMeasurements.html';" data-i18n="amazon-methodology-tab-field-measurements" style="word-wrap: break-word;">Mediciones de campo</li>
+                                    <li data-i18n="amazon-methodology-tab-numeric-modeling">Modelamiento numérico</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" onclick="location.href='DancingRivers_DataAndTools.html';"  data-i18n="amazon-data-tools-tab">Datos</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" data-i18n="amazon-publications-tab" style="cursor: default;">Publicaciones</h2>
+                                <ul class="menu-dropdown">
+                                    <li onclick="location.href='DancingRivers_Newsletters.html';" data-i18n="amazon-publications-tab-newsletters">Boletines</li>
+                                    <li onclick="location.href='DancingRivers_Tutorials.html';" data-i18n="amazon-publications-tab-tutorials">Tutoriales</li>
+                                    <li data-i18n="amazon-publications-tab-infographics">Infografías</li>
+                                    <li data-i18n="amazon-publications-tab-handbooks">Handbooks</li>
+                                    <li data-i18n="amazon-publications-tab-papers">Papers</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" onclick="location.href='DancingRivers_Workshops.html';" data-i18n="amazon-education-tab">Educación</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+    <!-- Teams -->
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;  width: 100vw; margin-top: 19vh; background-color: white;">
+
+        <!-- Coordination team -->
+        <div class="column-flex-center" style="width: 100%; height: 66vh; background-color: white">
+
+            <div class="team-title-container">
+                <p class="team-title-text" style="color: #6BBDDD;" data-i18n="dancingR-teams-generalCoordination">General Coordination</p>
+            </div>
+
+            <div class="team-row-container">
+
+                <!-- background-image: url('./img/dancingRivers/moore-team/jorgexd.jpg') -->
+                <!-- Jorge D. Abad -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('./img/dancingRivers/moore-team/jorge_2.jpg')"></div>
+                    <p class="team-people-text-name">Dr. Jorge D. Abad</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-jorgeAbad">Director Ejecutivo</p>
+                    <p class="team-people-text-description"> jabadc@utec.edu.pe</p>
+                </div>
+
+                <!-- background-image: url('./img/dancingRivers/moore-team/icon-person.jpg') -->
+                <!-- Luciana Vásquez -->
+                <!--<div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('./img/dancingRivers/moore-team/General-coordination/luciana_moore.jpg')"></div>
+                    <p class="team-people-text-name">Luciana Vásquez</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-lucianaVasquez">Coordinadora de Proyectos</p>
+                    <p class="team-people-text-description"> lvasquez@utec.edu.pe</p>
+                </div>-->
+
+                <!-- David Barreto -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/david_moore.jpg')"></div>
+                    <p class="team-people-text-name">David Barreto</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-davidBarreto">Coordinador de Proyectos</p>
+                    <p class="team-people-text-description"> cbarreto@utec.edu.pe</p>
+                </div>
+
+                <!-- Tania Rojas -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/tania_moore.jpg')"></div>
+                    <p class="team-people-text-name">Tania Rojas</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-taniaRojas">Lorem Ipsum</p>
+                    <p class="team-people-text-description"> trojasc@utec.edu.pe</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- Communication team -->
+        <div class="column-flex-center" style="width: 100%; height: 60vh; background-color: white;">
+
+            <div class="team-title-container">
+                <p class="team-title-text" style="color: black;" data-i18n="dancingR-teams-communications">Equipo de Comunicación</p>
+            </div>
+            <div class="team-row-container">
+
+                <!-- Evelyn Calderon -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('./img/dancingRivers/moore-team/evelyn_1.jpg')"></div>
+                    <p class="team-people-text-name">Evelyn Calderon</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-evelynCalderon">Especialista en Comunicación</p>
+                    <p class="team-people-text-description"> ecalderon@utec.edu.pe</p>
+                </div>
+
+                <!-- Roger Marquez -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/roger_moore.jpg')"></div>
+                    <p class="team-people-text-name">Roger Marquez</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-rogerMarquez">Diseñador Gráfico</p>
+                    <p class="team-people-text-description"> rmarquez@utec.edu.pe</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Postdoctoral Researchers team -->
+    <div class="column-flex-center" style="width: 100%; height: 66vh;  background-color: white; ">
+
+        <div class="team-title-container">
+            <p class="team-title-text" style="color: #6BBDDD;" data-i18n="dancingR-teams-mainResearchers">Main Researchers</p>
+        </div>
+        <div class="team-row-container">
+
+            <!-- Kensuke Naito -->
+            <div class="team-people-container">
+                <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/kensuke_moore.jpg')"></div>
+                <p class="team-people-text-name">Dr. Kensuke Naito</p>
+                <p class="team-people-text-description" data-i18n="dancingR-teams-position-kensukeNaito">Morfodinámica Fluvial y Transporte de Sedimentos</p>
+                <p class="team-people-text-description"> knaito@utec.edu.pe</p>
+            </div>
+
+            <!-- Carlos Cañas -->
+            <!--<div class="team-people-container">
+                <div class="photo-people-team" style=" background-image: url('./img/dancingRivers/moore-team/PostdoctoralResearch-team/carlos_moore.jpg')"></div>
+                <p class="team-people-text-name">Carlos Cañas</p>
+                <p class="team-people-text-description" data-i18n="dancingR-teams-position-carlosCanas">Ecología y Biodiversidad</p>
+                <p class="team-people-text-description"> ccanas@utec.edu.pe</p>
+            </div>-->
+
+        </div>
+
+    </div>
+
+
+        <!-- GIS team section -->
+        <div class="column-flex-center" style="width: 100%; height: 110vh;  background-color: white">
+            <div class="team-title-container">
+                <p class="team-title-text" style="color: black;" data-i18n="dancingR-teams-gisTeam">GIS Team</p>
+            </div>
+            <div class="team-row-container">
+
+                <!-- Gabriela Flores -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/gabriela_moore.jpg')"></div>
+                    <p class="team-people-text-name">Gabriela Flores</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-gabrielaFlores">Coordinadora SIG</p>
+                    <p class="team-people-text-description">	gflores@utec.edu.pe</p>
+                </div>
+
+                <!-- Aracelly Mallma -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/aracelly_moore.jpg')"></div>
+                    <p class="team-people-text-name">Aracelly Mallma</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-aracellyMallma">Asistente de Investigación</p>
+                    <p class="team-people-text-description">	gmallma@utec.edu.pe</p>
+                </div>
+
+                <!-- Jesús Marín -->
+                <div class="team-people-container">
+                    <!--https://citadancingrivers.s3-us-west-1.amazonaws.com/img/icon-person.jpg-->
+                    <div class="photo-people-team" style=" background-image: url('./img/dancingRivers/moore-team/jesus_1.jpg')"></div>
+                    <p class="team-people-text-name">Jesús Marín</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-jesusMarin">Asistente de Investigación</p>
+                    <p class="team-people-text-description">	jmarin@utec.edu.pe</p>
+                </div>
+
+
+            </div>
+
+
+            <div class="team-row-container">
+
+                <!-- Gerardo Valencia -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/gerardo_moore.jpg')"></div>
+                    <p class="team-people-text-name">Gerardo Valencia</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-gerardoValencia">Desarrollador Tecnológico</p>
+                    <p class="team-people-text-description">	gvalencia@utec.edu.pe</p>
+                </div>
+
+                <!-- Jaime Del Alcázar -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/jaime_moore.jpg')"></div>
+                    <p class="team-people-text-name">Jaime Del Alcázar</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-jaimeDelAlcazar">Desarrollador Tecnológico</p>
+                    <p class="team-people-text-description">	jdelalcazar@utec.edu.pe</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Field team section -->
+        <div class="column-flex-center" style="width: 100%; height: 140vh;  background-color: white">
+
+            <div style="height: 15%; width: 52%; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;">
+                <p class="team-title-text" style="color: #6BBDDD;" data-i18n="dancingR-teams-fieldTeam">Field Team</p>
+            </div>
+
+            <div class="team-row-container" style="height: 40%;">
+
+                <!-- Leo Guerrero -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/leo_moore.jpg')"></div>
+                    <p class="team-people-text-name">Leo Guerrero</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-leoGuerrero">Coordinador de campo</p>
+                    <p class="team-people-text-description">	lguerrero@utec.edu.pe</p>
+                </div>
+
+                <!-- Yulissa Estrada -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/yulissa_moore.jpg')"></div>
+                    <p class="team-people-text-name">Yulissa Estrada</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-yulissaEstrada">Asistente de Investigación</p> <!-- Coordinadora de Sedimentos -->
+                    <p class="team-people-text-description"> yestrada@utec.edu.pe</p>
+                </div>
+
+                <!-- Henry Valverde -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/henry_moore.jpg')"></div>
+                    <p class="team-people-text-name">Henry Valverde</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-henryValverde">Asistente de Investigación</p>
+                    <p class="team-people-text-description">	hvalverde@utec.edu.pe</p>
+                </div>
+
+
+            </div>
+
+            <div class="team-row-container" style="height: 40%;">
+
+                <!-- Hernan Chicchón -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/hernan_moore.jpg')"></div>
+                    <p class="team-people-text-name">Hernan Chicchón</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-hernanChicchon">Asistente de Investigación</p>
+                    <p class="team-people-text-description">	hchicchon@utec.edu.pe</p>
+                </div>
+
+                <!-- Bryan Santillan -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/bryan_moore.jpg')"></div>
+                    <p class="team-people-text-name">Bryan Santillan</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-bryanSantillan">Asistente de Investigación</p>
+                    <p class="team-people-text-description"> bsantillan@utec.edu.pe</p>
+                </div>
+
+                <!-- Flor Fuentes -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/flor_moore.jpg')"></div>
+                    <p class="team-people-text-name">Flor Fuentes</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-florFuentes">Asistente de Investigación</p>
+                    <p class="team-people-text-description"> ffuentes@utec.edu.pe</p>
+                </div>
+
+            </div>
+
+            <div class="team-row-container" style="height: 40%;">
+
+                <!-- Grecia Valdivia -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/grecia_moore.jpg')"></div>
+                    <p class="team-people-text-name">Grecia Valdivia</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-greciaValdivia">Asistente de Investigación</p>
+                    <p class="team-people-text-description">	gvaldivia@utec.edu.pe</p>
+                </div>
+
+                <!-- Paula Sisniegas -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/paula_moore.jpg')"></div>
+                    <p class="team-people-text-name">Paula Sisniegas</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-paulaSisniegas">Asistente de Investigacion</p>
+                    <p class="team-people-text-description">	psisniegas@utec.edu.pe</p>
+                </div>
+
+                <!-- Froilan Rodas -->
+<!--                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('./img/dancingRivers/moore-team/Field-team/froilan_moore.jpg')"></div>
+                    <p class="team-people-text-name">Froilan Rodas</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-froilanRodas">Asistente de Investigacion</p>
+                    <p class="team-people-text-description">	frodas@utec.edu.pe</p>
+                </div>-->
+
+            </div>
+
+        </div>
+
+        <!-- Technology team section -->
+        <div class="column-flex-center" style="width: 100%; height: 66vh; background-color: white;">
+
+            <div class="team-title-container">
+                <p class="team-title-text" style="color: black;" data-i18n="dancingR-teams-technologyTeam">Technology Team</p>
+            </div>
+            <div class="team-row-container" style="height: 60%;">
+
+                <!-- Jose Velarde -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/jose_moore.jpg')"></div>
+                    <p class="team-people-text-name">Jose Velarde</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-joseVelarde">Coordinador de Tecnología y Laboratorio</p>
+                    <p class="team-people-text-description"> jvelardee@utec.edu.pe</p>
+                </div>
+
+                <!-- Junior Montoya -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/junior_moore.jpg')"></div>
+                    <p class="team-people-text-name">Junior Montoya</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-juniorMontoya">Desarrollador Tecnológico</p>
+                    <p class="team-people-text-description">	jmontoya@utec.edu.pe</p>
+                </div>
+
+                <!-- Lynn Marín -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/lynn_moore.jpg')"></div>
+                    <p class="team-people-text-name">Lynn Marín</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-lynnMarin">Desarrollador Tecnológico</p>
+                    <p class="team-people-text-description">	lmarin@utec.edu.pe</p>
+                </div>
+
+                <!-- Joseph Peña -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/joseph_moore.jpg')"></div>
+                    <p class="team-people-text-name">Joseph Peña</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-josephPena">Desarrollador Tecnológico</p>
+                    <p class="team-people-text-description">	joseph.pena@utec.edu.pe</p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <!-- --------------- -->
+
+        <!-- Former section -->
+        <!--<div class="column-flex-center" style="width: 100%; height: 110vh;  background-color: white">
+            <div class="team-title-container">
+                <p class="team-title-text" style="color: black;" >Ex miembros</p>
+            </div>
+            <div class="team-row-container">
+
+                &lt;!&ndash; Hugo Montoro Cáceres &ndash;&gt;
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('./img/dancingRivers/moore-team/icon-person.jpg')"></div>
+                    <p class="team-people-text-name">Hugo Montoro</p>
+                    <p class="team-people-text-description" >Asistente de Investigación</p>
+                    <p class="team-people-text-description">	jabadc@utec.edu.pe</p>
+                </div>
+
+                &lt;!&ndash; Mishel Meléndez Bernardo &ndash;&gt;
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('./img/dancingRivers/moore-team/icon-person.jpg')"></div>
+                    <p class="team-people-text-name">Mishel Meléndez</p>
+                    <p class="team-people-text-description" >Asistente de Investigación</p>
+                    <p class="team-people-text-description">	jabadc@utec.edu.pe</p>
+                </div>
+
+                &lt;!&ndash; Luciana Vásquez Ríos &ndash;&gt;
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('./img/dancingRivers/moore-team/icon-person.jpg')"></div>
+                    <p class="team-people-text-name">Luciana Vásquez</p>
+                    <p class="team-people-text-description" >Asistente de Investigación</p>
+                    <p class="team-people-text-description">	jabadc@utec.edu.pe</p>
+                </div>
+
+            </div>
+
+            <div class="team-row-container">
+
+                &lt;!&ndash; Froilan Rodas Guizado &ndash;&gt;
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('./img/dancingRivers/moore-team/icon-person.jpg')"></div>
+                    <p class="team-people-text-name">Froilan Rodas</p>
+                    <p class="team-people-text-description" >Asistente de Investigación</p>
+                    <p class="team-people-text-description">	jabadc@utec.edu.pe</p>
+                </div>
+
+                &lt;!&ndash; Carlos Cañas Alva &ndash;&gt;
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('./img/dancingRivers/moore-team/icon-person.jpg')"></div>
+                    <p class="team-people-text-name">Carlos Cañas</p>
+                    <p class="team-people-text-description" >Asistente de Investigación</p>
+                    <p class="team-people-text-description">	jabadc@utec.edu.pe</p>
+                </div>
+
+                &lt;!&ndash; Bárbara López Moscoso &ndash;&gt;
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('./img/dancingRivers/moore-team/icon-person.jpg')"></div>
+                    <p class="team-people-text-name">Bárbara López</p>
+                    <p class="team-people-text-description" >Asistente de Investigación</p>
+                    <p class="team-people-text-description">	jabadc@utec.edu.pe</p>
+                </div>
+
+            </div>
+        </div>-->
+        <div class="column-flex-center" style="width: 100%; height: 100vh;  background-color: white; margin-bottom: 40px;">
+            <div class="team-title-container">
+                <p class="team-title-text" style="color: black;" >Miembros Anteriores</p>
+            </div>
+            <div class="team-row-container">
+
+                <!-- Hugo Montoro Cáceres -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('./img/dancingRivers/moore-team/icon-person.jpg')"></div>
+                    <p class="team-people-text-name">Hugo Montoro</p>
+                    <p class="team-people-text-description" >Hidrografía y Oceanografía</p>
+                    <!--<p class="team-people-text-description">	jabadc@utec.edu.pe</p>-->
+                </div>
+
+                <!-- Mishel Meléndez Bernardo -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/icon-person.jpg')"></div>
+                    <p class="team-people-text-name">Mishel Meléndez</p>
+                    <p class="team-people-text-description" >Hidráulica</p>
+                    <!--<p class="team-people-text-description">	jabadc@utec.edu.pe</p>-->
+                </div>
+
+                <!-- Luciana Vásquez Ríos -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/luciana_moore.jpg')"></div>
+                    <p class="team-people-text-name">Luciana Vásquez</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-lucianaVasquez">Coordinadora de Proyectos</p>
+                    <!--<p class="team-people-text-description"> lvasquez@utec.edu.pe</p>-->
+                </div>
+
+            </div>
+
+            <div class="team-row-container">
+
+                <!-- Froilan Rodas Guizado -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/froilan_moore.jpg')"></div>
+                    <p class="team-people-text-name">Froilan Rodas</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-froilanRodas">Asistente de Investigacion</p>
+                    <!--<p class="team-people-text-description">	frodas@utec.edu.pe</p>-->
+                </div>
+
+                <!-- Carlos Cañas Alva -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/carlos_moore.jpg')"></div>
+                    <p class="team-people-text-name">Dr. Carlos Cañas</p>
+                    <p class="team-people-text-description" data-i18n="dancingR-teams-position-carlosCanas">Ecología y Biodiversidad</p>
+                    <!--<p class="team-people-text-description"> ccanas@utec.edu.pe</p>-->
+                </div>
+
+                <!-- Bárbara López Moscoso -->
+                <div class="team-people-container">
+                    <div class="photo-people-team" style=" background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/icon-person.jpg')"></div>
+                    <p class="team-people-text-name">Bárbara López</p>
+                    <p class="team-people-text-description" >Asistente de Investigación</p>
+                    <!--<p class="team-people-text-description">	jabadc@utec.edu.pe</p>-->
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- Footer Section -->
+<div id="Footer">
+
+    <div class="footer-top-container">
+        <p class="footer-text" data-i18n="footer_address">Jr. Medrano Silva 165 Barranco</p>
+        <p class="footer-text" data-i18n="footer_phone_annex">P. (01) 2305020 Anexo 4295</p>
+        <p class="footer-text" data-i18n="footer_web">W. http://www.cita.utec.edu.pe/</p>
+        <p class="footer-text" data-i18n="footer_mail">C. cita@utec.edu.pe</p>
+
+        <div class="row-flex">
+            <div class="footer-logo-container" >
+                <a href="https://www.facebook.com/CITAUTEC/" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/facebook_circle_gray.png" width="100%" height="100%"></a>
+            </div>
+            <div class="footer-logo-container">
+                <a href="https://www.youtube.com/channel/UCwC0Nzlv29aYXlZSMwXqgqw" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/youtube_circle_gray.png" width="100%" height="100%" ></a>
+            </div>
+            <div class="footer-logo-container">
+                <a href="https://twitter.com/CITA_UTEC" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/twitter_circle_gray.png" width="100%" height="100%" ></a>
+            </div>
+            <div class="footer-logo-container">
+                <a href="https://www.instagram.com/cita_utec/" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/instagram_circle_gray.png" width="100%" height="100%" ></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom-container">
+        <p class="footer-text" data-i18n="footer_copy-logo">Copyright &copy 2019 CITA-UTEC.</p>
+        <span>&nbsp;</span>
+        <span class="footer-text" data-i18n="footer_copyright">All rights reserved.</span>
+    </div>
+
+</div>
+
+</body>
+</html>

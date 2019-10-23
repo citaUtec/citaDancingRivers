@@ -1,0 +1,39 @@
+#Footer {
+    min-height: 14vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #7c7b79;
+    text-align: center;
+}
+
+
+.row-flex-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.column-flex-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.row-flex{
+    display: flex;
+    flex-direction: row;
+}
+.column-flex{
+    display: flex;
+    flex-direction: column;
+}

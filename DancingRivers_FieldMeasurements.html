@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dancing Rivers</title>
+
+    <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+
+    <!--JQuery JS Script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!--Bootstrap CSS Style-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+
+    <!--Bottom Cards section CSS Style-->
+    <link rel="stylesheet" href="css/bottom-cards-style.css">
+
+    <!-- Nav-Bar -->
+    <link rel="stylesheet" href="css/dancingRivers/dancing_rivers_navbar.css">
+    <!-- General CSS -->
+    <link rel="stylesheet" href="css/dancingRivers/dancing_rivers_general.css">
+
+    <!--Handling JS Scripts-->
+    <script src="./lib/CLDRPluralRuleParser/CLDRPluralRuleParser.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.messagestore.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.language.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.parser.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.emitter.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="./lib/history/jquery.history.js"></script>
+    <script src="./lib/url/url.min.js"></script>
+
+    <!--New layout script-->
+    <script type="text/javascript" src="./js/dancingRivers/dancingRivers.js"></script>
+
+    <!--Language Handler Logic JS script-->
+    <script type="text/javascript" src="js/index/language_handler_dancingRivers.js"></script>
+
+    <script type="text/javascript" src="js/index/general_web_dancingRivers.js"></script>
+
+    <style>
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    body, html {
+        /*height: 100%;*/
+        width: 100vw;
+        /*position: absolute;*/
+        overflow-x: hidden;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(255,255,255,1);
+        scroll-behavior: smooth;
+    }
+
+    @font-face {
+        font-family: Museo-Sans-100;
+        src: url("./font/Museo Sans 100/MuseoSans-100.otf");
+    }
+    @font-face {
+        font-family: Museo-Sans-300;
+        src: url("./font/Museo Sans 300/MuseoSans-300.otf");
+    }
+    @font-face {
+        font-family: Museo-Sans-500;
+        src: url("./font/Museo Sans 500/MuseoSans-500.otf");
+    }
+    @font-face {
+        font-family: Museo-Sans-700;
+        src: url("./font/Museo Sans 700/MuseoSans-700.otf");
+    }
+
+
+</style>
+
+</head>
+
+<style>
+
+    *:focus {
+        outline: 0 !important;
+    }
+
+</style>
+
+<body>
+
+<div id="Header" style="position: fixed;">
+    <div class="upper-header" style="display: flex; align-items: center; justify-content: center;">
+
+        <div style="width: 74%; display: flex; align-items: center; justify-content: flex-start;">
+
+            <div style="width: 20%">
+                <a href="https://citautec.github.io/citaVisualizer/map.html#" target="_blank">
+                    <button class="map-data-button" data-i18n="dancingR-button-mapData">Map Data</button>
+                </a>
+            </div>
+
+            <div style="width: 80%; display: flex; align-items: center; justify-content: flex-end;">
+
+                <button id="btn_es" class="idiom-btn-1" onclick="passLanguage('es')">Español</button>
+                <button id="btn_en" class="idiom-btn-2" onclick="passLanguage('en')">English</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="NavBar" style=" display: flex; justify-content: center; align-items: center;">
+        <div style="width: 74%; display: flex; align-items: center; justify-content: space-between;">
+            <div style="min-width: 18%; display: flex; justify-content: flex-start; align-items: center;">
+                <img id="logo-dancing-rivers"  onclick="location.href='DancingRivers_Home.html'" src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/logo-rios-danzantes.png" >
+            </div>
+
+            <div style=" width: 74%; display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; justify-content: flex-end;">
+
+                <div style="width: 100%; ">
+
+                    <ul class="hList" style="display: flex; align-items: center; margin: 0;">
+                        <li>
+                            <a class="menu" >
+                                <h2  class="menu-title" onclick="location.href='DancingRivers_Home.html';"  data-i18n="amazon-home-tab">Inicio</h2>
+                                <ul class="menu-dropdown">
+                                    <li onclick="location.href='DancingRivers_Team.html';" data-i18n="amazon-home-tab-team">Nuestro Equipo</li>
+                                    <li onclick="location.href='DancingRivers_Collaborations.html';" data-i18n="amazon-home-tab-work">¿Con quienes trabajamos?</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" onclick="location.href='DancingRivers_Research.html';" data-i18n="amazon-research-tab">Investigación</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" style="color: #00BCD4; font-family: Museo-Sans-500; cursor: default;" data-i18n="amazon-methodology-tab">Metodología</h2>
+                                <ul class="menu-dropdown">
+                                    <li onclick="location.href='DancingRivers_RemoteSensing.html';" data-i18n="amazon-methodology-tab-remote-sensing">Sensoramiento Remoto</li>
+                                    <li onclick="location.href='DancingRivers_FieldMeasurements.html';" data-i18n="amazon-methodology-tab-field-measurements" style="word-wrap: break-word;">Mediciones de campo</li>
+                                    <li data-i18n="amazon-methodology-tab-numeric-modeling">Modelamiento numérico</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" onclick="location.href='DancingRivers_DataAndTools.html';"  data-i18n="amazon-data-tools-tab">Datos</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" data-i18n="amazon-publications-tab" style="cursor: default;">Publicaciones</h2>
+                                <ul class="menu-dropdown">
+                                    <li onclick="location.href='DancingRivers_Newsletters.html';" data-i18n="amazon-publications-tab-newsletters">Boletines</li>
+                                    <li onclick="location.href='DancingRivers_Tutorials.html';" data-i18n="amazon-publications-tab-tutorials">Tutoriales</li>
+                                    <li data-i18n="amazon-publications-tab-infographics">Infografías</li>
+                                    <li data-i18n="amazon-publications-tab-handbooks">Handbooks</li>
+                                    <li data-i18n="amazon-publications-tab-papers">Papers</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" onclick="location.href='DancingRivers_Workshops.html';" data-i18n="amazon-education-tab">Educación</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<style>
+    #field-intro-section{
+        width: 100vw;
+        height: 86vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 14vh;
+        /*'./img/dancingRivers/DSC_0103.jpg*/
+        /*background: linear-gradient( rgba(0,0,0,0.0), rgba(0,0,0,0.5)) , url('./img/dancingRivers/IMG_3883.jpg');*/
+        background: linear-gradient( rgba(0,0,0,0.0), rgba(0,0,0,0.5)) , url('./img/dancingRivers/IMG_3989_3.jpg');
+        /*background-image: url('./img/dancingRivers/IMG_3989_3.jpg');*/
+        background-size: cover;
+    }
+</style>
+
+<div id="field-intro-section">
+
+    <div class="intro-container-out">
+        <div class="intro-container-in">
+            <div class="intro-text-container" >
+                <div class="intro-text-container-inner">
+                    <p class="main-title-white-text">Mediciones de Campo</p>
+                    <!--<p class="main-description-white-text" >Técnicas y procedimientos desarrollados para estudiar las variables físicas de los ríos amazónicos</p>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 2 --->
+    <!--<div style="display: flex; flex-direction: row; justify-content: center; align-items: center; width: 74%; height: 90%">-->
+        <!--<div class="column-flex-center" style="width: 100%; height: 100%;">-->
+            <!--<div style="align-self: flex-start">-->
+                <!--<p class="rSensing-title-blue-text" data-i18n="dancingR-rSensing-parameters-title">Parámetros de Análisis</p>-->
+                <!--<p class="rSensing-content-text" data-i18n="dancingR-rSensing-parameters-text"></p>-->
+            <!--</div>-->
+<!--</div>-->
+        <!--&lt;!&ndash;<div class="column-flex-center" style="width: 50%;  height: 72%;">-->
+            <!--<img src="./img/dancingRivers/peru_white.png"  style=" height: 100%; width: auto" >-->
+        <!--</div>&ndash;&gt;-->
+    <!--</div>-->
+
+<!--</div>--><!--<div id="rSensing-parameters-section">-->
+
+
+
+
+<!-- 3 -->
+<!--<div id="rSensing-criterion-section">-->
+
+    <!--<div style="display: flex; flex-direction: row; justify-content: center; align-items: center; width: 74%; height: 90%">-->
+        <!--<div class="column-flex-center" style="width: 50%;  height: 72%;">-->
+            <!--<img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/peru_dark.png"  style=" height: 100%; width: auto" >-->
+        <!--</div>-->
+        <!--<div class="column-flex-center" style="width: 50%; height: 100%;">-->
+            <!--<div style="align-self: flex-end; text-align: right">-->
+                <!--<p class="rSensing-title-blue-text" data-i18n="dancingR-rSensing-criterion-title">Criterios de Análisis</p>-->
+                <!--<p class="rSensing-content-text" data-i18n="dancingR-rSensing-criterion-text"></p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+<!--</div>-->
+
+
+<!-- 4 -->
+<!--<div id="rSensing-processing-section">
+
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; width: 74%; height: 90%">
+        <div class="column-flex-center" style="width: 50%; height: 100%;">
+            <div style="align-self: flex-start">
+                <p class="rSensing-title-blue-text" data-i18n="dancingR-rSensing-processing-title">Procesamiento <span style="color: #333333;    "></span> </p>
+            </div>
+            <p class="rSensing-content-text" data-i18n="dancingR-rSensing-processing-text"></p>
+        </div>
+        <div class="column-flex-center" style="width: 50%;  height: 72%;">
+            <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/peru_white.png"  style=" height: 100%; width: auto" >
+        </div>
+    </div>
+
+</div>-->
+
+
+<!-- 5 -->
+<div id="field-description-section">
+
+    <div class="column-flex-center" style=" width: 74%; height: 90%">
+
+            <div style="align-self: flex-start">
+                <p class="field-title-blue-text" >Mediciones de Campo <span style="color: #333333;"></span> </p>
+                <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100" data-i18n="field-title-blue-text"></p>
+            </div>
+
+        <div class="column-flex-center" style="width: 90%;  height: 72%; margin-top: 40px; margin-bottom: 40px;">
+            <img src="./img/dancingRivers/river-gray-5.png"  style=" height: auto; width: 100%" >
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div style="width: 100%; min-height: 100vh; padding: 10vh 0; display: flex; flex-direction: column;
+    justify-content: center; align-items: center; background-color: #E6E6E6;">
+
+
+    <div class="column-flex-center" style=" width: 74%; height: 90%">
+
+        <div style="color: #6BBDDD; align-self: flex-start; margin-bottom: 36px;">
+            <p style="font-size: 32px; color: #6BBDDD; font-family: Museo-Sans-300;">Unidades de analisis</p>
+        </div>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 100%;">
+
+            <!--#CEBEAF-->
+            <div style="background-color: #7D7D7D; width: 350px; height: 500px;">
+
+            </div>
+
+            <div style="background-color: #7D7D7D; width: 350px; height: 500px;">
+
+            </div>
+
+            <div style="background-color: #7D7D7D; width: 350px; height: 500px;">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<div style="width: 100%;
+    min-height: 90vh;
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;">
+
+
+    <div class="column-flex-center" style=" width: 74%; height: 90%">
+
+        <div style="color: #6BBDDD; align-self: flex-start; margin-bottom: 36px;">
+            <p style="font-size: 32px; color: #6BBDDD; font-family: Museo-Sans-300;">Criterios de analisis</p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; width: 100%; height: 400px">
+
+                <div style="width: 200px; height: 80px; display: flex; flex-direction: row; align-items: center;">
+                    <img src="./img/dancingRivers/Marker.png"  style=" height: 100%; width: auto;" >
+                    <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100; margin-left: 20px;">Área de estudio</p>
+                </div>
+
+                <div style="width: 200px; height: 80px; display: flex; flex-direction: row; align-items: center;">
+                    <img src="./img/dancingRivers/Marker.png"  style=" height: 100%; width: auto;" >
+                    <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100; margin-left: 20px;">Fechas de estudio</p>
+                </div>
+
+                <div style="width: 200px; height: 80px; display: flex; flex-direction: row; align-items: center;">
+                    <img src="./img/dancingRivers/Marker.png"  style=" height: 100%; width: auto;" >
+                    <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100; margin-left: 20px;">Características</p>
+                </div>
+
+            </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- 6 -->
+<!--<div id="rSensing-NEW-section">
+
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; width: 74%; height: 90%">
+        <div class="column-flex-center" style="width: 50%; height: 100%;">
+            <div style="align-self: flex-start">
+                <p class="rSensing-title-blue-text">Lorem Ipsum <span style="color: #333333;    "></span> </p>
+            </div>
+            <p class="rSensing-content-text" data-i18n="dancingR-rSensing-processing-text"></p>
+        </div>
+        <div class="column-flex-center" style="width: 50%;  height: 72%;">
+            <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/peru_white.png"  style=" height: 100%; width: auto" >
+        </div>
+    </div>
+
+</div>-->
+
+
+
+<!-- Footer Section -->
+<div id="Footer">
+
+    <div class="footer-top-container">
+        <p class="footer-text" data-i18n="footer_address">Jr. Medrano Silva 165 Barranco</p>
+        <p class="footer-text" data-i18n="footer_phone_annex">P. (01) 2305020 Anexo 4295</p>
+        <p class="footer-text" data-i18n="footer_web">W. http://www.cita.utec.edu.pe/</p>
+        <p class="footer-text" data-i18n="footer_mail">C. cita@utec.edu.pe</p>
+
+        <div class="row-flex">
+            <div class="footer-logo-container" >
+                <a href="https://www.facebook.com/CITAUTEC/" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/facebook_circle_gray.png" width="100%" height="100%"></a>
+            </div>
+            <div class="footer-logo-container">
+                <a href="https://www.youtube.com/channel/UCwC0Nzlv29aYXlZSMwXqgqw" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/youtube_circle_gray.png" width="100%" height="100%" ></a>
+            </div>
+            <div class="footer-logo-container">
+                <a href="https://twitter.com/CITA_UTEC" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/twitter_circle_gray.png" width="100%" height="100%" ></a>
+            </div>
+            <div class="footer-logo-container">
+                <a href="https://www.instagram.com/cita_utec/" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/instagram_circle_gray.png" width="100%" height="100%" ></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom-container">
+        <p class="footer-text" data-i18n="footer_copy-logo">Copyright &copy 2019 CITA-UTEC.</p>
+        <span>&nbsp;</span>
+        <span class="footer-text" data-i18n="footer_copyright">All rights reserved.</span>
+    </div>
+
+</div>
+
+
+</body>
+</html>
