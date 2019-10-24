@@ -119,7 +119,6 @@ function markerClickCallback(event){
     //map.setZoom(6);
     //map.panTo(new google.maps.LatLng(event.feature.getProperty("latitud"), event.feature.getProperty("longitud")));
 
-
     /*document.getElementById("stat_workshop1").innerText =*/
 
 }
@@ -313,11 +312,8 @@ function initMap() {
     addRegionJSONToMap("././data/workshops/PER_regiones_flag.geojson", regions_layer, "#FFFFFF", 1.0, "#00BFDF", 1.0);
 */
 
-
-    addSinglePolygonToMap("././data/workshops/Mascara.geojson", bounds_layer, "#FFFFFF", 1.0, "#FFFFFF", 1.0);
-
+    addSinglePolygonToMap("././data/workshops/Mascara.geojson", bounds_layer, "#FFFFFF", 1.0, "#FFFFFF", 1.0);s
     addRegionJSONToMap("././data/workshops/PER_regiones_flag.geojson", regions_layer, "#FFFFFF", 1.0, "#00BFDF", 1.0);
-
 
     /*river_data_layer.forEach(function (feature) {
 
@@ -328,12 +324,6 @@ function initMap() {
         }
 
     }); */
-
-
-
-
-
-
 
     /*regions_layer.getProperty("ID_1")*/
 
@@ -391,16 +381,9 @@ function initMap() {
 
 
 
-
-
     /*$("#image-container_").click(function(){
         $("#info-loreto").fadeIn("3000");
     });*/
-
-
-
-
-
 
 
     /*marker1.addListener('click', gaaaa("#Gaaaa") );*/
