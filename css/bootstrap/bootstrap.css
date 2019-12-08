@@ -2958,6 +2958,7 @@ input[type="button"].btn-block {
   width: 100%;
 }
 
+<<<<<<< HEAD
 /*.fade {
   transition: opacity 0.15s linear;
 }*/
@@ -2969,6 +2970,10 @@ input[type="button"].btn-block {
   padding: 50px;
   background-color: lightgreen;
   opacity: 1;
+=======
+.fade {
+  transition: opacity 0.15s linear;
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -2977,6 +2982,7 @@ input[type="button"].btn-block {
   }
 }
 
+<<<<<<< HEAD
 /*@media screen and (prefers-reduced-motion: reduce) {
   .fade {
     transition: none;
@@ -2987,6 +2993,8 @@ input[type="button"].btn-block {
   }
 }*/
 
+=======
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 .fade:not(.show) {
   opacity: 0;
 }
@@ -5913,7 +5921,11 @@ button.close {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
+<<<<<<< HEAD
   width: 8%;
+=======
+  width: 15%;
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
   color: #000;
   text-align: center;
   opacity: 0.5;

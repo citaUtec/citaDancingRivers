@@ -17,6 +17,7 @@
 }
 
 .container-rivers {
+<<<<<<< HEAD
 /*    position: relative;
     width: 100%;
     height: 100%;*/
@@ -25,6 +26,11 @@
     height: 100%;
 
     overflow: hidden;
+=======
+    position: relative;
+    width: 100%;
+    height: 100%;
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 }
 
 .container-rivers .inner {
@@ -107,9 +113,13 @@
 }
 
 #image_right{
+<<<<<<< HEAD
     /*height: 100%;
     width: 100%;*/
     height: auto;
+=======
+    height: 100%;
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
     width: 100%;
 }
 
@@ -120,6 +130,7 @@
 }
 
 #image_left{
+<<<<<<< HEAD
 
     z-index: 4000;
     /*height: 100%;
@@ -206,6 +217,14 @@
 
 
 
+=======
+    z-index: 4000;
+    height: 100%;
+    width: calc(var(--container-width) * 2);
+    object-fit: cover
+}
+
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 #section-title-anabranching{
     position:absolute;
     bottom: calc(var(--container-height) / 12.5);
@@ -217,11 +236,16 @@
     margin: 0;
 }
 
+<<<<<<< HEAD
 #section-description-meandering{
+=======
+#section-description-anabranching{
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
     text-align: justify;
     position:absolute;
     top: 8%;
     right: calc(50% + 5%);
+<<<<<<< HEAD
     left: 7%;
     /*left: 8%;*/
     width: 30%;
@@ -234,6 +258,16 @@
     color: black;
     /*color: #4D4D4D;*/
     /*color: white;*/
+=======
+    left: 8%;
+    width: 40%;
+    /*max-height: calc(var(--container-height) * 0.1);*/
+
+    overflow: hidden;
+    font-family: "PT Sans Narrow";
+    font-size: var(--section-description-font-size);
+    color: white;
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 }
 
 #section-image-anabranching{
@@ -254,6 +288,7 @@
     margin: 0;
 }
 
+<<<<<<< HEAD
 #section-description-anabranching{
     text-align: justify;
     position:absolute;
@@ -271,6 +306,22 @@
     color: black;
     /*color: #4D4D4D;*/
     /*color: white;*/
+=======
+#section-description-meandric{
+    text-align: justify;
+    position:absolute;
+    top: calc(var(--container-height) / 12.5);
+    right: calc(var(--container-height) / 12.5);
+    /*right: 8%;*/
+    left: calc(calc(var(--container-width)/2) + calc(var(--container-height) / 20));
+
+    width: calc(var(--container-width) * 0.4);
+    /*max-height: calc(var(--container-height) * 0.1);
+    height: calc(var(--container-height) * 0.3);*/
+    font-family: "PT Sans Narrow";
+    font-size: var(--section-description-font-size);
+    color: white;
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
     z-index: 1000;
 }
 

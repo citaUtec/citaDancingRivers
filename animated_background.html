@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dancing Rivers</title>
+    <!--<script type="text/javascript" src="js/bootstrap/bootstrap.bundle.min.js"></script>-->
+
+    <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+
+    <!--JQuery JS Script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <!--Bootstrap JS script-->
+    <!--<script type="text/javascript" src="js/bootstrap/bootstrap.bundle.min.js"></script>-->
+
+    <!--Bootstrap CSS Style-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+
+    <!--Bottom Cards section CSS Style-->
+    <link rel="stylesheet" href="css/bottom-cards-style.css">
+
+
+    <!-- Nav-Bar -->
+    <link rel="stylesheet" href="css/dancingRivers/dancing_rivers_navbar.css">
+
+    <!--Handling JS Scripts-->
+    <script src="./lib/CLDRPluralRuleParser/CLDRPluralRuleParser.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.messagestore.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.language.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.parser.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.emitter.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="./lib/history/jquery.history.js"></script>
+    <script src="./lib/url/url.min.js"></script>
+
+    <!--New layout script-->
+    <!--<script type="text/javascript" src="./js/index/amazon_basin.js"></script>-->
+    <script type="text/javascript" src="./js/dancingRivers/dancingRivers.js"></script>
+
+    <!--Language Handler Logic JS script-->
+    <!--<script type="text/javascript" src="js/index/language_handler_logic_index.js"></script>-->
+    <script type="text/javascript" src="js/index/language_handler_logic.js"></script>
+
+
+<style  >
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+/*    body, html {
+        !*height: 100%;*!
+        width: 100vw;
+        !*position: absolute;*!
+        overflow-x: hidden;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(255,255,255,1);
+        scroll-behavior: smooth;
+    }*/
+    body, html {
+        background-color:white;
+        overflow-x: hidden;
+        height: 100%;
+    }
+/*    @font-face {
+        font-family: Museo-Sans;
+        src: url("./font/Museo Sans 100/MuseoSans-100.otf");
+        !*src: url('./font/Museo Sans 100/') format('truetype');*!
+    }*/
+
+
+    @font-face {
+        font-family: Museo-Sans-100;
+        src: url("./font/Museo Sans 100/MuseoSans-100.otf");
+    }
+    @font-face {
+        font-family: Museo-Sans-300;
+        src: url("./font/Museo Sans 300/MuseoSans-300.otf");
+    }
+    @font-face {
+        font-family: Museo-Sans-500;
+        src: url("./font/Museo Sans 500/MuseoSans-500.otf");
+    }
+    @font-face {
+        font-family: Museo-Sans-700;
+        src: url("./font/Museo Sans 700/MuseoSans-700.otf");
+    }
+
+
+
+
+
+</style>
+
+    <link rel="stylesheet" media="screen and (max-width: 992px)" href="./css/test1.css" />
+
+    <!--<link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 900px)' href='./css/test2.css' />-->
+    <link rel='stylesheet' media='screen and (min-width: 993px) ' href='./css/test2.css' />
+
+<style>
+    /*@media only screen and (min-width: 992px) {
+        @import url('./css/test1.css');
+    }
+
+    !* Extra large devices (large laptops and desktops, 1200px and up) *!
+    @media only screen and (min-width: 768px) {
+
+        @import url('./css/test2.css');
+
+    }*/
+</style>
+
+</head>
+
+<style>
+    .list-info{
+        background-color: transparent;
+    }
+</style>
+
+
+<body>
+
+<style>
+    .header1{
+        width: 100vw;
+        height: 4vh;
+        /*background-color: #343a40;*/
+        background-color: #F2F2F2;
+    }
+    #logo-cita{
+        /*height: 2vw;
+        width: 4vw;*/
+        height: 55px;
+        width: 170px;
+    }
+    .NavBar{
+
+        /*min-width: 20%;*/
+        width: 100%;
+        height: 10vh;
+        background-color: white;
+
+        /*position: fixed;*/
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    }
+
+</style>
+
+
+<style>
+
+</style>
+
+
+
+
+<!-- height: 100vh; -->
+<!-- style="overflow: hidden; height: 100%; " -->
+
+
+<style>
+    .gaaa{
+        max-width: 100%;
+        height: auto;
+
+    }
+</style>
+<style>
+    body, html {
+/*
+        height: 100%;
+*/
+        width: 100%;
+        position: absolute;
+        overflow-x: hidden;
+        margin: 0;
+        background-color: rgba(255,255,255,1);
+        scroll-behavior: smooth;
+
+    }
+
+</style>
+
+
+<!--<div style="background-image: url('./img/dancingRivers/PNG-01.png'); background-size: 100% 100%; "></div>
+<div style="background-image: url('./img/dancingRivers/PNG-02.png'); width: 100%; height: 100%; background-size: cover"></div>
+<div style="background-image: url('./img/dancingRivers/PNG-03.png'); width: 100%; height: 100%; background-size: cover"></div>
+<div style="background-image: url('./img/dancingRivers/PNG-04.png'); width: 100%; height: 100%; background-size: cover"></div>
+<div style="background-image: url('./img/dancingRivers/PNG-05.png'); width: 100%; height: 100%; background-size: cover"></div>
+<div style="background-image: url('./img/dancingRivers/PNG-06.png'); width: 100%; height: 100%; background-size: cover"></div>-->
+<!--<div>
+    <img src="./img/dancingRivers/PNG-01.png" width="100%" height="auto">
+    <img src="./img/dancingRivers/PNG-02.png" width="100%" height="auto">
+    <img src="./img/dancingRivers/PNG-03.png" width="100%" height="auto">
+    <img src="./img/dancingRivers/PNG-04.png" width="100%" height="auto">
+    <img src="./img/dancingRivers/PNG-05.png" width="100%" height="auto">
+    <img src="./img/dancingRivers/PNG-06.png" width="100%" height="auto">
+</div>-->
+
+<!--<div>
+    <img src="./img/dancingRivers/HDR/bloke1.png" width="100%" height="auto">
+    <img src="./img/dancingRivers/HDR/bloke2.png" width="100%" height="auto">
+    <img src="./img/dancingRivers/HDR/bloke3.png" width="100%" height="auto">
+    <img src="./img/dancingRivers/HDR/bloke4.png" width="100%" height="auto">
+    <img src="./img/dancingRivers/HDR/bloke5.png" width="100%" height="auto">
+    <img src="./img/dancingRivers/HDR/bloke6.png" width="100%" height="auto">
+</div>-->
+
+
+
+
+<!-- 28/08 -->
+<!--<div>
+    <div>
+        <img src="./img/dancingRivers/HDR/bloke1.png" width="100%" height="auto">
+        &lt;!&ndash;ROCAS&ndash;&gt;
+        <div style="z-index: 10000; position: absolute; top: 400%;">
+            <img src="./img/dancingRivers/HDR/G2C.gif" width="100%" height="auto">
+        </div>
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR/bloke2.png" width="100%" height="auto">
+        &lt;!&ndash; OLAS &ndash;&gt;
+        <div style="z-index: 10000; position: absolute; top: 540%;">
+            <img src="./img/dancingRivers/HDR/G4.gif" width="100%" height="auto">
+        </div>
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR/bloke3.png" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR/bloke4.png" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR/bloke5.png" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR/bloke6.png" width="100%" height="auto">
+    </div>
+&lt;!&ndash;    <div style="z-index: 10000">
+        <img src="./img/dancingRivers/HDR/G4.gif" width="100%" height="auto">
+    </div>&ndash;&gt;
+</div>-->
+
+
+
+<!--
+<div>
+    <div>
+        <img src="./img/dancingRivers/HDR_2/bloke1.png" width="100%" height="auto">
+        &lt;!&ndash;ROCAS&ndash;&gt;
+        &lt;!&ndash;<div style="z-index: 10000; position: absolute; top: 400%;">
+            <img src="./img/dancingRivers/HDR/G2C.gif" width="100%" height="auto">
+        </div>&ndash;&gt;
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR_2/bloke2.png" width="100%" height="auto">
+        &lt;!&ndash; OLAS &ndash;&gt;
+        &lt;!&ndash;<div style="z-index: 10000; position: absolute; top: 540%;">
+            <img src="./img/dancingRivers/HDR/G4.gif" width="100%" height="auto">
+        </div>&ndash;&gt;
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR_2/bloke3.png" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR_2/bloke4.png" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR_2/bloke5.png" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR_2/bloke6.png" width="100%" height="auto">
+    </div>
+    &lt;!&ndash;    <div style="z-index: 10000">
+            <img src="./img/dancingRivers/HDR/G4.gif" width="100%" height="auto">
+        </div>&ndash;&gt;
+</div>
+-->
+
+
+
+
+<!--
+<div>
+    <div>
+        &lt;!&ndash;<img src="./img/dancingRivers/HDR_2/Mesa_1.png" width="100%" height="auto">&ndash;&gt;
+        <img src="./img/dancingRivers/HDR/Mesa_3.gif" width="100%" height="auto">
+    </div>
+</div>
+-->
+
+
+
+
+<!--<div>
+    <div>
+        <img src="./img/dancingRivers/HDR_3/A_1.png" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR_3/A_2.gif" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR_3/A_3.gif" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR_3/A_4.png" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR_3/A_5.gif" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR_3/A_6.gif" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR_3/A_7.gif" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR_3/A_8.png" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR_3/A_9.gif" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR_3/A_10.png" width="100%" height="auto">
+    </div>
+</div>-->
+
+
+
+
+
+
+
+<!--<div>
+    <div>
+        <img src="./img/dancingRivers/HDR/newHDR/Background_River_Stories.png" width="100%" height="auto">
+    </div>
+</div>-->
+
+
+
+
+<div>
+    <div>
+        <img src="./img/dancingRivers/HDR/newHDR/B_1.jpg" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR/newHDR/B_2.gif" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR/newHDR/B_3.gif" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR/newHDR/B_4.jpg" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR/newHDR/B_5.gif" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR/newHDR/B_6.gif" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR/newHDR/B_7.gif" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR/newHDR/B_8.jpg" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR/newHDR/B_9.gif" width="100%" height="auto">
+    </div>
+    <div>
+        <img src="./img/dancingRivers/HDR/newHDR/B_10.jpg" width="100%" height="auto">
+    </div>
+</div>
+
+</body>
+</html>

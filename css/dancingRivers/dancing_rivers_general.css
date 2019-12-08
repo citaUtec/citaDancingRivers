@@ -303,7 +303,10 @@
 .team-title-container{
     height: 18%;
     width: 52%;
+<<<<<<< HEAD
     margin-bottom: 40px;
+=======
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -312,18 +315,29 @@
 .team-title-text{
     font-size: 26px;
     color: #6BBDDD;
+<<<<<<< HEAD
     font-family: Museo-Sans-500;
+=======
+    font-family: Museo-Sans-300;
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
     margin: 0;
 }
 .team-row-container{
     width: 75%;
+<<<<<<< HEAD
     height: 35vh;
+=======
+    height: 50vh;
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
+<<<<<<< HEAD
     margin-bottom: 50px;
+=======
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 }
 .team-people-text-name{
     font-size: 22px;
@@ -348,6 +362,7 @@
 /* */
 
 
+<<<<<<< HEAD
 /* Equipment */
 
 .photo-equipment{
@@ -435,6 +450,8 @@
 /**/
 
 
+=======
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 /* Remote Sensing */
 .dot {
     height: 15px;
@@ -601,9 +618,14 @@
 /* Field Measurements */
 #field-description-section{
     width: 100%;
+<<<<<<< HEAD
     min-height: 60vh;
     padding: 60px 0;
     /*padding: 10vh 0;*/
+=======
+    min-height: 100vh;
+    padding: 10vh 0;
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -630,7 +652,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     /*box-shadow: 0px 5px 10px rgba(0,0,0,0.2);*/
+=======
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 }
 .dataTools-content-text{
     font-size: 22px;
@@ -827,14 +853,21 @@
 
 #tutorials-section{
     width: 100%;
+<<<<<<< HEAD
     min-height: 280vh;
+=======
+    height: 280vh;
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
+<<<<<<< HEAD
     padding-top: 10vh;
+=======
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 }
 
 .tutorials-section-inner{
@@ -851,7 +884,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+<<<<<<< HEAD
     margin-bottom: 10vh;
+=======
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 }
 
 
@@ -932,7 +968,10 @@
     color: black;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 .flip-card-back {
     background-color: #999999;
     color: white;
@@ -943,8 +982,12 @@
 #collaborations-section{
     width: 100%;
     height: 160vh;
+<<<<<<< HEAD
     padding: 0px 0;
     /*padding-top: 100px;*/
+=======
+    padding-top: 100px;
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -952,6 +995,7 @@
     overflow: hidden;
 }
 
+<<<<<<< HEAD
 
 #analysis-field-section{
     width: 100%;
@@ -1028,12 +1072,15 @@
 
 /**/
 
+=======
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 .flip-card-title-text{
     font-size: 34px;
     text-align: left;
     color: white;
     font-family: Museo-Sans-500;
 }
+<<<<<<< HEAD
 
 
 .flip-card-title-text-analysis{
@@ -1046,6 +1093,8 @@
 
 
 
+=======
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 .flip-card-description-text{
     font-size: 26px;
     text-align: left;
@@ -1070,6 +1119,7 @@
 }
 
 
+<<<<<<< HEAD
 .analysis-card-row-container{
     display: flex;
     flex-direction: row;
@@ -1089,6 +1139,8 @@
 
 
 
+=======
+>>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 .flip-card-title-container{
     height: 80%;
     width: 80%;
