@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dancing Rivers</title>
+
+    <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+
+    <!--JQuery JS Script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!--Bootstrap CSS Style-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+
+    <!--Bottom Cards section CSS Style-->
+    <link rel="stylesheet" href="css/bottom-cards-style.css">
+
+    <!-- Nav-Bar -->
+    <link rel="stylesheet" href="css/dancingRivers/dancing_rivers_navbar.css">
+    <!-- General CSS -->
+    <link rel="stylesheet" href="css/dancingRivers/dancing_rivers_general.css">
+
+    <!--Handling JS Scripts-->
+    <script src="./lib/CLDRPluralRuleParser/CLDRPluralRuleParser.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.messagestore.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.language.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.parser.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.emitter.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="./lib/history/jquery.history.js"></script>
+    <script src="./lib/url/url.min.js"></script>
+
+    <!--New layout script-->
+    <script type="text/javascript" src="./js/dancingRivers/dancingRivers.js"></script>
+
+    <!--Language Handler Logic JS script-->
+    <script type="text/javascript" src="js/index/language_handler_dancingRivers.js"></script>
+
+    <script type="text/javascript" src="js/index/general_web_dancingRivers.js"></script>
+
+    <!--Slick-->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <script src="slick/slick.js"></script>
+
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        body, html {
+            /*height: 100%;*/
+            width: 100vw;
+            /*position: absolute;*/
+            overflow-x: hidden;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(255,255,255,1);
+            scroll-behavior: smooth;
+        }
+
+        @font-face {
+            font-family: Museo-Sans-100;
+            src: url("./font/Museo Sans 100/MuseoSans-100.otf");
+        }
+        @font-face {
+            font-family: Museo-Sans-300;
+            src: url("./font/Museo Sans 300/MuseoSans-300.otf");
+        }
+        @font-face {
+            font-family: Museo-Sans-500;
+            src: url("./font/Museo Sans 500/MuseoSans-500.otf");
+        }
+        @font-face {
+            font-family: Museo-Sans-700;
+            src: url("./font/Museo Sans 700/MuseoSans-700.otf");
+        }
+
+
+    </style>
+
+</head>
+
+<style>
+
+    *:focus {
+        outline: 0 !important;
+    }
+
+</style>
+
+<body>
+
+<div id="Header" style="position: fixed;">
+    <div class="upper-header" style="display: flex; align-items: center; justify-content: center;">
+
+        <div style="width: 74%; display: flex; align-items: center; justify-content: flex-start;">
+
+            <div style="width: 20%">
+                <a href="https://citautec.github.io/citaVisualizer/map.html#" target="_blank">
+                    <button class="map-data-button" data-i18n="dancingR-button-mapData">Map Data</button>
+                </a>
+            </div>
+
+            <div style="width: 80%; display: flex; align-items: center; justify-content: flex-end;">
+
+                <button id="btn_es" class="idiom-btn-1" onclick="passLanguage('es')">Español</button>
+                <button type="button" disabled id="btn_en" class="idiom-btn-2" onclick="passLanguage('en')">English</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="NavBar" style=" display: flex; justify-content: center; align-items: center;">
+        <div style="width: 74%; display: flex; align-items: center; justify-content: space-between;">
+            <div style="min-width: 18%; display: flex; justify-content: flex-start; align-items: center;">
+                <img id="logo-dancing-rivers"  onclick="location.href='index.html'" src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/logo-rios-danzantes.png" >
+            </div>
+
+            <div style=" width: 74%; display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; justify-content: flex-end;">
+
+                <div style="width: 100%; ">
+
+                    <ul class="hList" style="display: flex; align-items: center; margin: 0;">
+                        <li>
+                            <a class="menu" >
+                                <h2  class="menu-title" onclick="location.href='index.html';"  data-i18n="amazon-home-tab">Inicio</h2>
+                                <ul>
+                                    <li><a href='DancingRivers_Team.html' data-i18n="amazon-home-tab-team">Nuestro Equipo</a></li>
+                                    <li><a href='DancingRivers_Collaborations.html' data-i18n="amazon-home-tab-work">¿Con quienes trabajamos?</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" onclick="location.href='DancingRivers_Research.html';" data-i18n="amazon-research-tab">Investigación</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" style="color: #00BCD4; font-family: Museo-Sans-500; cursor: default;" data-i18n="amazon-methodology-tab">Metodología</h2>
+                                <ul>
+                                    <li><a href='DancingRivers_RemoteSensing.html' data-i18n="amazon-methodology-tab-remote-sensing">Sensoramiento Remoto</a></li>
+                                    <li style="word-wrap: break-word;"><a href='DancingRivers_FieldMeasurements.html' data-i18n="amazon-methodology-tab-field-measurements">Mediciones de campo</a>
+                                        <ul>
+                                            <li><a href="DancingRivers_Hydrodynamic.html">Unidad Hidrodinámica</a></li>
+                                            <li><a href="DancingRivers_Hydrogeomorphological.html">Unidad Hidrogeomorfológica</a></li>
+                                            <li><a href="DancingRivers_Hydrosedimentological.html">Unidad Hidrosedimentológica</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="pointer_default" data-i18n="amazon-methodology-tab-numeric-modeling">Modelamiento numérico</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" onclick="location.href='DancingRivers_DataAndTools.html';"  data-i18n="amazon-data-tools-tab">Datos</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" data-i18n="amazon-publications-tab" style="cursor: default;">Publicaciones</h2>
+                                <ul>
+                                    <li><a href='DancingRivers_Newsletters.html' data-i18n="amazon-publications-tab-newsletters">Boletines</a></li>
+                                    <li><a href='DancingRivers_Tutorials.html' data-i18n="amazon-publications-tab-tutorials">Tutoriales</a></li>
+                                    <li><a class="pointer_default" data-i18n="amazon-publications-tab-infographics">Infografías</a></li>
+                                    <li><a class="pointer_default" data-i18n="amazon-publications-tab-handbooks">Handbooks</a></li>
+                                    <li><a class="pointer_default" data-i18n="amazon-publications-tab-papers">Papers</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" onclick="location.href='DancingRivers_Workshops.html';" data-i18n="amazon-education-tab">Educación</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<style>
+    #field-intro-section{
+        width: 100vw;
+        height: 86vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 14vh;
+        /*'./img/dancingRivers/DSC_0103.jpg*/
+        /*background: linear-gradient( rgba(0,0,0,0.0), rgba(0,0,0,0.5)) , url('./img/dancingRivers/IMG_3883.jpg');*/
+        background: linear-gradient( rgba(0,0,0,0.0), rgba(0,0,0,0.5)) , url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/IMG_3989_3.jpg');
+        /*background-image: url('./img/dancingRivers/IMG_3989_3.jpg');*/
+        background-size: cover;
+    }
+</style>
+
+<div id="field-intro-section">
+
+    <div class="intro-container-out">
+        <div class="intro-container-in">
+            <div class="intro-text-container" >
+                <div class="intro-text-container-inner">
+                    <p class="main-title-white-text">Unidad Hidrogeomorfológica</p>
+                    <!--<p class="main-description-white-text" >Técnicas y procedimientos desarrollados para estudiar las variables físicas de los ríos amazónicos</p>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--  -->
+<div id="field-description-section">
+
+    <div class="column-flex-center" style=" width: 74%; height: 90%">
+
+        <div style="align-self: flex-start">
+            <p class="field-title-blue-text" style="margin-bottom: 36px;">Unidad Hidrogeomorfológica <span style="color: #333333;"></span> </p>
+            <!--
+                            <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100" data-i18n="field-title-blue-text"></p>
+            -->
+            <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100">Permite determinar, mediante mediciones batimétricas longitudinales al río, el transporte de fondo, es
+                decir, el movimiento de las dunas en un periodo de tiempo. Adicionalmente, se realiza una caracterización
+                de las formas de fondo, ya que estas estructuras coherentes se desplazan en forma bidimensional y
+                tridimensional, dependiendo de la estructura del flujo y de la configuración geomorfológica local.</p>
+            <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100">La unidad hidrogemorfológica es importante ya que forma parte de los estudios básicos de ingeniería para
+                determinar los parámetros de la dinámica fluvial que actúa sobre su cauce.</p>
+
+            <!--
+                            <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100">La unidad hidrogemorfológica consiste en la medición de tres perfiles (mínimo) paralelos del fondo del río en dos tiempos diferentes,  luego las cuales son procesadas y comparadas para determinar la velocidad de migración,el transporte de fondo, así como sus características morfológicas. Su importancia es debido a que forma parte de los estudios básicos de ingeniería para determinar los parámetros de la dinámica fluvial que actúa sobre su cauce.</p>
+
+                            <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100">La unidad hidrodinámica es importante para el monitoreo de cuerpos de agua, nos proporciona información in situ de algunos parámetros físicos que son usados para diversos fines de estudio e ingeniería, Tiene como objetivo caracterizar el comportamiento hidrodinámico del río, es decir, conocer la geometría de la sección, velocidades, caudal y patrones de flujo a través de mediciones en secciones transversales a lo largo del área de estudio; es importante debido a que se pueden calibrar estaciones de control, monitorizar rios, lagos y lagunas, se puede realizar mediciones de sedimentos por el método ASET, diseños de puentes, puertos y represas, mediciones en campo para calibración de modelos físicos, diseños de defensas ribereñas, se puede determinar el Talweg para la navegabilidad, etc.</p>
+
+                            <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100">Todas estas tecnicas y metodologias del cual estan respaldadas por estudios  y trabajos relacionados con los rios, son la motivacion de realizar proyectos de gran envergadura y tambien de proponer soluciones racionales y correctas.</p>
+            -->
+
+        </div>
+
+        <div class="column-flex-center" style="width: 90%;  height: 72%; margin-top: 40px; margin-bottom: 40px;">
+            <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/river-gray-5.png"  style=" height: auto; width: 100%" >
+        </div>
+
+    </div>
+
+</div>
+
+
+<div style="width: 100%;    min-height: 40vh;    padding: 60px 0;    display: flex;    flex-direction: column;
+    justify-content: center;    align-items: center;  background-color: #E6E6E6;">
+
+
+    <div class="column-flex-center" style=" width: 74%; height: 90%">
+
+
+        <div class="equipment-title-container">
+            <!--<p class="team-title-text" style="color: #6BBDDD; margin: 40px 0">Equipos de Medición</p>-->
+            <p class="field-title-blue-text" >Equipos de Medición <span style="color: #333333;"></span> </p>
+
+            <!--<p class="team-title-text" style="color: #6BBDDD; margin: 40px 0">Equipos de Medición</p>-->
+        </div>
+
+
+        <div style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 20px;">
+            <div class="slider one-time-hydrogeomorphological" style="width: 90%">
+
+                <div>
+                    <div class="equipment-container">
+                        <div class="equipment-image" style="background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/icon-person.jpg')"></div>
+                        <p class="equipment-name">Ecosonda Bathy 500HD</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="equipment-container">
+                        <div class="equipment-image" style="background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/icon-person.jpg')"></div>
+                        <p class="equipment-name">GPS GR5 Base y Rover</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="equipment-container">
+                        <div class="equipment-image" style="background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/icon-person.jpg')"></div>
+                        <p class="equipment-name">Software de navegación: Hypack</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="equipment-container">
+                        <div class="equipment-image" style="background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/icon-person.jpg')"></div>
+                        <p class="equipment-name">GPS Hemisphere Atlas link</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="equipment-container">
+                        <div class="equipment-image" style="background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/icon-person.jpg')"></div>
+                        <p class="equipment-name">Laptop - Celular</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <script>
+            $(document).ready(function(){
+
+                // $('.demo').slick();
+                $('.one-time-hydrogeomorphological').slick({
+                    dots: false,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    touchMove: false
+                });
+                /*$('.one-time').slick({
+                    dots: false,
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    touchMove: false
+                });*/
+
+            });
+
+        </script>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- Footer Section -->
+<div id="Footer">
+
+    <div class="footer-top-container">
+        <p class="footer-text" data-i18n="footer_address">Jr. Medrano Silva 165 Barranco</p>
+        <p class="footer-text" data-i18n="footer_phone_annex">P. (01) 2305020 Anexo 4295</p>
+        <p class="footer-text" data-i18n="footer_web">W. http://www.cita.utec.edu.pe/</p>
+        <p class="footer-text" data-i18n="footer_mail">C. cita@utec.edu.pe</p>
+
+        <div class="row-flex">
+            <div class="footer-logo-container" >
+                <a href="https://www.facebook.com/CITAUTEC/" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/facebook_circle_gray.png" width="100%" height="100%"></a>
+            </div>
+            <div class="footer-logo-container">
+                <a href="https://www.youtube.com/channel/UCwC0Nzlv29aYXlZSMwXqgqw" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/youtube_circle_gray.png" width="100%" height="100%" ></a>
+            </div>
+            <div class="footer-logo-container">
+                <a href="https://twitter.com/CITA_UTEC" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/twitter_circle_gray.png" width="100%" height="100%" ></a>
+            </div>
+            <div class="footer-logo-container">
+                <a href="https://www.instagram.com/cita_utec/" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/instagram_circle_gray.png" width="100%" height="100%" ></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom-container">
+        <p class="footer-text" data-i18n="footer_copy-logo">Copyright &copy 2019 CITA-UTEC.</p>
+        <span>&nbsp;</span>
+        <span class="footer-text" data-i18n="footer_copyright">All rights reserved.</span>
+    </div>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dancing Rivers</title>
+
+    <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+
+    <!--JQuery JS Script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!--Bootstrap CSS Style-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+
+    <!--Bottom Cards section CSS Style-->
+    <link rel="stylesheet" href="css/bottom-cards-style.css">
+
+    <!-- Nav-Bar -->
+    <link rel="stylesheet" href="css/dancingRivers/dancing_rivers_navbar.css">
+    <!-- General CSS -->
+    <link rel="stylesheet" href="css/dancingRivers/dancing_rivers_general.css">
+
+    <!--Handling JS Scripts-->
+    <script src="./lib/CLDRPluralRuleParser/CLDRPluralRuleParser.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.messagestore.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.language.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.parser.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.emitter.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="./lib/history/jquery.history.js"></script>
+    <script src="./lib/url/url.min.js"></script>
+
+    <!--New layout script-->
+    <script type="text/javascript" src="./js/dancingRivers/dancingRivers.js"></script>
+
+    <!--Language Handler Logic JS script-->
+    <script type="text/javascript" src="js/index/language_handler_dancingRivers.js"></script>
+
+    <script type="text/javascript" src="js/index/general_web_dancingRivers.js"></script>
+
+    <style>
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    body, html {
+        /*height: 100%;*/
+        width: 100vw;
+        /*position: absolute;*/
+        overflow-x: hidden;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(255,255,255,1);
+        scroll-behavior: smooth;
+    }
+
+    @font-face {
+        font-family: Museo-Sans-100;
+        src: url("./font/Museo Sans 100/MuseoSans-100.otf");
+    }
+    @font-face {
+        font-family: Museo-Sans-300;
+        src: url("./font/Museo Sans 300/MuseoSans-300.otf");
+    }
+    @font-face {
+        font-family: Museo-Sans-500;
+        src: url("./font/Museo Sans 500/MuseoSans-500.otf");
+    }
+    @font-face {
+        font-family: Museo-Sans-700;
+        src: url("./font/Museo Sans 700/MuseoSans-700.otf");
+    }
+
+
+</style>
+
+</head>
+
+<style>
+
+    *:focus {
+        outline: 0 !important;
+    }
+
+</style>
+
+<body>
+
+<div id="Header" style="position: fixed;">
+    <div class="upper-header" style="display: flex; align-items: center; justify-content: center;">
+
+        <div style="width: 74%; display: flex; align-items: center; justify-content: flex-start;">
+
+            <div style="width: 20%">
+                <a href="https://citautec.github.io/citaVisualizer/map.html#" target="_blank">
+                    <button class="map-data-button" data-i18n="dancingR-button-mapData">Map Data</button>
+                </a>
+            </div>
+
+            <div style="width: 80%; display: flex; align-items: center; justify-content: flex-end;">
+
+                <button id="btn_es" class="idiom-btn-1" onclick="passLanguage('es')">Español</button>
+                <button type="button" disabled id="btn_en" class="idiom-btn-2" onclick="passLanguage('en')">English</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="NavBar" style=" display: flex; justify-content: center; align-items: center;">
+        <div style="width: 74%; display: flex; align-items: center; justify-content: space-between;">
+            <div style="min-width: 18%; display: flex; justify-content: flex-start; align-items: center;">
+                <img id="logo-dancing-rivers"  onclick="location.href='index.html'" src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/logo-rios-danzantes.png" >
+            </div>
+
+            <div style=" width: 74%; display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; justify-content: flex-end;">
+
+                <div style="width: 100%; ">
+
+                    <ul class="hList" style="display: flex; align-items: center; margin: 0;">
+                        <li>
+                            <a class="menu" >
+                                <h2  class="menu-title" onclick="location.href='index.html';"  data-i18n="amazon-home-tab">Inicio</h2>
+                                <ul>
+                                    <li><a href='DancingRivers_Team.html' data-i18n="amazon-home-tab-team">Nuestro Equipo</a></li>
+                                    <li><a href='DancingRivers_Collaborations.html' data-i18n="amazon-home-tab-work">¿Con quienes trabajamos?</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" onclick="location.href='DancingRivers_Research.html';" data-i18n="amazon-research-tab">Investigación</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" style="color: #00BCD4; font-family: Museo-Sans-500; cursor: default;" data-i18n="amazon-methodology-tab">Metodología</h2>
+                                <ul>
+                                    <li><a href='DancingRivers_RemoteSensing.html' data-i18n="amazon-methodology-tab-remote-sensing">Sensoramiento Remoto</a></li>
+                                    <li  style="word-wrap: break-word;"><a href='DancingRivers_FieldMeasurements.html' data-i18n="amazon-methodology-tab-field-measurements">Mediciones de campo</a>
+
+                                        <ul>
+                                            <li><a href="DancingRivers_Hydrodynamic.html">Unidad Hidrodinámica</a></li>
+                                            <li><a href="DancingRivers_Hydrogeomorphological.html">Unidad Hidrogeomorfológica</a></li>
+                                            <li><a href="DancingRivers_Hydrosedimentological.html">Unidad Hidrosedimentológica</a></li>
+                                        </ul>
+
+                                    </li>
+                                    <li><a class="pointer_default" data-i18n="amazon-methodology-tab-numeric-modeling">Modelamiento numérico</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" onclick="location.href='DancingRivers_DataAndTools.html';"  data-i18n="amazon-data-tools-tab">Datos</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" data-i18n="amazon-publications-tab" style="cursor: default;">Publicaciones</h2>
+                                <ul>
+                                    <li><a href='DancingRivers_Newsletters.html' data-i18n="amazon-publications-tab-newsletters">Boletines</a></li>
+                                    <li><a href='DancingRivers_Tutorials.html' data-i18n="amazon-publications-tab-tutorials">Tutoriales</a></li>
+                                    <li><a class="pointer_default" data-i18n="amazon-publications-tab-infographics">Infografías</a></li>
+                                    <li><a class="pointer_default" data-i18n="amazon-publications-tab-handbooks">Handbooks</a></li>
+                                    <li><a class="pointer_default" data-i18n="amazon-publications-tab-papers">Papers</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" onclick="location.href='DancingRivers_Workshops.html';" data-i18n="amazon-education-tab">Educación</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<style>
+    #field-intro-section{
+        width: 100vw;
+        height: 86vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 14vh;
+        /*'./img/dancingRivers/DSC_0103.jpg*/
+        /*background: linear-gradient( rgba(0,0,0,0.0), rgba(0,0,0,0.5)) , url('./img/dancingRivers/IMG_3883.jpg');*/
+        background: linear-gradient( rgba(0,0,0,0.0), rgba(0,0,0,0.5)) , url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/IMG_3989_3.jpg');
+        /*background-image: url('./img/dancingRivers/IMG_3989_3.jpg');*/
+        background-size: cover;
+    }
+</style>
+
+<div id="field-intro-section">
+
+    <div class="intro-container-out">
+        <div class="intro-container-in">
+            <div class="intro-text-container" >
+                <div class="intro-text-container-inner">
+                    <p class="main-title-white-text">Mediciones de Campo</p>
+                    <p class="main-description-white-text" >Técnicas y procedimientos desarrollados para estudiar las variables físicas de los ríos amazónicos.	</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 5 -->
+<div id="field-description-section">
+
+    <div class="column-flex-center" style=" width: 74%; height: 90%">
+
+            <div style="align-self: flex-start">
+                <p class="field-title-blue-text" style="margin-bottom: 36px;">Mediciones de Campo <span style="color: #333333;"></span> </p>
+<!--
+                <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100" data-i18n="field-title-blue-text"></p>
+-->
+                <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100">Las mediciones de campo son uno de los procesos más importantes para obtener información de primera
+                    mano, del cual, con una adecuada planificación se logrará medir los parámetros más importantes que
+                    determinan y caracterizan a los ríos amazónicos. Todas las técnicas y metodologías aplicadas están
+                    respaldadas por estudios y trabajos relacionados con los ríos, y se dividen en tres unidades: unidad
+                    hidrodinámica, hidrogeomorfológica e hidrosedimentológica.</p>
+
+<!--
+                <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100">La unidad hidrogemorfológica consiste en la medición de tres perfiles (mínimo) paralelos del fondo del río en dos tiempos diferentes,  luego las cuales son procesadas y comparadas para determinar la velocidad de migración,el transporte de fondo, así como sus características morfológicas. Su importancia es debido a que forma parte de los estudios básicos de ingeniería para determinar los parámetros de la dinámica fluvial que actúa sobre su cauce.</p>
+
+                <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100">La unidad hidrodinámica es importante para el monitoreo de cuerpos de agua, nos proporciona información in situ de algunos parámetros físicos que son usados para diversos fines de estudio e ingeniería, Tiene como objetivo caracterizar el comportamiento hidrodinámico del río, es decir, conocer la geometría de la sección, velocidades, caudal y patrones de flujo a través de mediciones en secciones transversales a lo largo del área de estudio; es importante debido a que se pueden calibrar estaciones de control, monitorizar rios, lagos y lagunas, se puede realizar mediciones de sedimentos por el método ASET, diseños de puentes, puertos y represas, mediciones en campo para calibración de modelos físicos, diseños de defensas ribereñas, se puede determinar el Talweg para la navegabilidad, etc.</p>
+
+                <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100">Todas estas tecnicas y metodologias del cual estan respaldadas por estudios  y trabajos relacionados con los rios, son la motivacion de realizar proyectos de gran envergadura y tambien de proponer soluciones racionales y correctas.</p>
+-->
+
+            </div>
+
+        <div class="column-flex-center" style="width: 90%;  height: 72%; margin-top: 40px; margin-bottom: 40px;">
+            <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/river-gray-5.png"  style=" height: auto; width: 100%" >
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!--<style>
+    .analysis-text-link {
+        /*font-family: Museo-Sans-500 ;
+        !*font-size: 1.2vw;*!
+        font-size: 18px;
+        max-width: 65%;
+        text-align: right;*/
+        font-family: Museo-Sans-500 ;
+        /*font-size: 1.2vw;*/
+        font-size: 26px;
+        max-width: 60%;
+        text-align: left;
+        color: #5C5B5F;
+
+        /*font-size: 26px;
+        text-align: left;
+        color: #5C5B5F;
+        font-family: Museo-Sans-500;
+        width: 60%;*/
+    }
+
+    .analysis-text-link:hover {
+        cursor: pointer;
+        color: #00BCD4;
+        /*text-decoration: underline;*/
+        text-decoration: none;
+    }
+</style>-->
+
+
+
+<!-- Unidades de Analisis -->
+<div style="width: 100%; min-height: 50vh; padding: 60px 0; display: flex; flex-direction: column;
+    justify-content: center; align-items: center; background-color: #E6E6E6;">
+
+<!--height: 90%-->
+    <div class="column-flex-center" style=" width: 74%; ">
+
+        <div style="color: #6BBDDD; align-self: flex-start; margin-bottom: 36px;">
+            <p style="font-size: 32px; color: #6BBDDD; font-family: Museo-Sans-300; margin-bottom: 36px;">Unidades de Análisis</p>
+            <p class="rSensing-content-text">Dada la interacción que existe entre el agua y sedimentos las unidades buscan caracterizar y medir esta
+                interacción. De esta manera, la unidad hidrodinámica permite conocer los parámetros hidrodinámicos del
+                río y sobre todo el comportamiento de las velocidades principales y secundarias. Estos resultados, en
+                conjunto con las unidades hidrogeomorfológica e hidrosedimentológica, permiten obtener y analizar
+                completamente el transporte de sedimentos, haciendo la división entre la carga de lavado, el transporte
+                de sedimentos suspendidos de fondo y el transporte de fondo.</p>
+
+            <p class="rSensing-content-text">El conocimiento de esta interacción permite entender el comportamiento de las estructuras
+                geomorfológicas de la naturaleza y, de esta manera, poder conocer los impactos que pueden generar los
+                diferentes eventos externos, como el cambio climático, o las estructuras civiles.</p>
+        </div>
+
+            <!--<div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 100%;">
+
+                &lt;!&ndash;#CEBEAF&ndash;&gt;
+                <div style="background-color: #FFFFFF; width: 350px; height: 500px;">
+
+                </div>
+
+                <div style="background-color: #FFFFFF; width: 350px; height: 500px;">
+
+                </div>
+
+                <div style="background-color: #FFFFFF; width: 350px; height: 500px;">
+
+                </div>
+
+            </div>-->
+
+
+
+<!--
+        <span style="margin: 0; margin-right: 15px;"><a id="linkDancingRivers" class="text-link" href="https://citautec.github.io/citaVisualizer/map.html#" style="color: #007bff;  font-family: Museo-Sans-700; " target="_blank">¡Conoce los Ríos Danzantes!</a></span>
+-->
+
+
+
+
+        <div id="analysis-field-section">
+                <!--margin-top: 76px;-->
+                <p style="font-size: 26px; text-align: center; font-family: Museo-Sans-100; color: #6BBDDD; font-family: Museo-Sans-300" ></p>
+
+
+                <div class="column-flex-center" style="width: 100%; height: 92%; justify-content: space-between;">
+
+                    <div class="analysis-card-row-container">
+
+                        <div class="analysis-card-container" >
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front column-flex-center" style="width: 100%; height: 100%; background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/gota-background-4.png'); background-size: cover;">
+                                        <!--<div class="flip-card-title-container">-->
+                                            <!--&lt;!&ndash;<p class="flip-card-title-text-analysis">Unidad Hidrodinámica</p>&ndash;&gt;-->
+                                        <!--</div>-->
+                                    </div>
+                                    <div class="flip-card-back column-flex-center" style="background-color: white !important;">
+                                            <!--<div class="flip-card-back-text-container">-->
+                                                <!--&lt;!&ndash;<p class="flip-card-description-text" data-i18n="dancingR-collaborations-universities-description"></p>&ndash;&gt;-->
+                                                <!--<p class="flip-card-title-text-analysis">Unidad Hidrodinámica</p>-->
+
+                                            <!--</div>-->
+                                        <div class="flip-card-title-container">
+                                            <!--<p class="flip-card-title-text-analysis">Unidad Hidrodinámica</p>-->
+                                            <a class="analysis-text-link" href="DancingRivers_Hydrodynamic.html" target="_blank">Unidad Hidrodinámica</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="analysis-card-container">
+                            <div class="flip-card">
+                                <div class="flip-card-inner" style="width: 100%; height: 100%;">
+                                    <!--<div class="flip-card-front column-flex-center" style="width: 100%; height: 100%; background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/DSC_0003.JPG'); background-size: cover;">-->
+                                    <!--<div class="flip-card-front column-flex-center" style="width: 100%; height: 100%; background-color: white;">-->
+
+
+                                    <div class="flip-card-front column-flex-center" style="width: 100%; height: 100%; background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/gota-background-4.png'); background-size: cover;">
+                                    </div>
+                                    <div class="flip-card-back column-flex-center" style="background-color: white !important;">
+                                        <div class="flip-card-title-container">
+                                           <a class="analysis-text-link" href="DancingRivers_Hydrogeomorphological.html" target="_blank">Unidad Hidrogeomorfológica</a>
+                                            <!--<p class="flip-card-title-text-analysis">Unidad Hidrogeomorfológica</p>-->
+                                        </div>
+                                    </div>
+
+                                    <!--<div class="flip-card-front column-flex-center" style="width: 100%; height: 100%; background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/gota-background-4.png'); background-size: cover;">
+                                        <div class="flip-card-title-container">
+                                            <p class="flip-card-title-text-analysis">Unidad Hidrogeomorfológica</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flip-card-back column-flex-center" >
+                                        <div class="flip-card-back-text-container">
+                                            <p class="flip-card-description-text" data-i18n="dancingR-collaborations-societyOrganizations-description"></p>
+                                        </div>
+                                    </div>-->
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="analysis-card-container">
+                            <div class="flip-card">
+                                <div class="flip-card-inner" style="width: 100%; height: 100%;">
+
+                                    <div class="flip-card-front column-flex-center" style="width: 100%; height: 100%; background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/gota-background-4.png'); background-size: cover;">
+                                    </div>
+                                    <div class="flip-card-back column-flex-center" style="background-color: white !important;">
+                                        <div class="flip-card-title-container">
+                                            <a class="analysis-text-link" href="DancingRivers_Hydrosedimentological.html" target="_blank">Unidad Hidrosedimentológica</a>
+                                            <!--<p class="flip-card-title-text-analysis">Unidad Hidrosedimentológica</p>-->
+                                        </div>
+                                    </div>
+
+                                    <!--<div class="flip-card-front column-flex-center" style="width: 100%; height: 100%; background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/gota-background-4.png'); background-size: cover;">
+                                        <div class="flip-card-title-container">
+                                            <p class="flip-card-title-text-analysis">Unidad Hidrosedimentológica</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flip-card-back column-flex-center" >
+                                        <div class="flip-card-back-text-container">
+                                            <p class="flip-card-description-text" data-i18n="dancingR-collaborations-governmentInstitutions-description"></p>
+                                        </div>
+                                    </div>-->
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--<div class="collaborations-row-container">
+
+                        <div class="collaborations-card-container">
+                            <div class="flip-card">
+                                <div class="flip-card-inner" style="width: 100%; height: 100%;">
+                                    <div class="flip-card-front column-flex-center" style="width: 100%; height: 100%; background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/river7.png'); background-size: cover;">
+                                        <div class="flip-card-title-container">
+                                            <p class="flip-card-title-text" data-i18n="dancingR-collaborations-governmentInstitutions-title">Instituciones Gubernamentales</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flip-card-back column-flex-center" >
+                                        <div class="flip-card-back-text-container">
+                                            <p class="flip-card-description-text" data-i18n="dancingR-collaborations-governmentInstitutions-description"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        &lt;!&ndash;<div class="collaborations-card-container">
+                            <div class="flip-card">
+                                <div class="flip-card-inner" style="width: 100%; height: 100%;">
+                                    <div class="flip-card-front column-flex-center" style="width: 100%; height: 100%; background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/DSC_0068.JPG'); background-size: cover;">
+                                        <div class="flip-card-title-container">
+                                            <p class="flip-card-title-text" data-i18n="dancingR-collaborations-nativeCommunities-title">Comunidades Nativas</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flip-card-back column-flex-center" >
+                                        <div class="flip-card-back-text-container">
+                                            <p class="flip-card-description-text" data-i18n="dancingR-collaborations-nativeCommunities-description"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>&ndash;&gt;
+
+                    </div>-->
+
+                </div>
+
+            </div>
+
+        <!--<div id="collaborations-section">
+    &lt;!&ndash;margin-top: 76px;&ndash;&gt;
+    <p style="font-size: 26px; text-align: center; font-family: Museo-Sans-100; color: #6BBDDD; font-family: Museo-Sans-300" ></p>
+
+
+    <div class="column-flex-center" style="width: 74%; height: 92%; justify-content: space-between; ">
+
+        <div class="collaborations-row-container">
+
+            <div class="collaborations-card-container" >
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front column-flex-center" style="width: 100%; height: 100%; background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/DSC_0054.JPG'); background-size: cover;">
+                            <div class="flip-card-title-container">
+                                <p class="flip-card-title-text" data-i18n="dancingR-collaborations-universities-title">Universidades</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back column-flex-center" >
+                                <div class="flip-card-back-text-container">
+                                    <p class="flip-card-description-text" data-i18n="dancingR-collaborations-universities-description"></p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collaborations-card-container">
+                <div class="flip-card">
+                    <div class="flip-card-inner" style="width: 100%; height: 100%;">
+                        <div class="flip-card-front column-flex-center" style="width: 100%; height: 100%; background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/DSC_0003.JPG'); background-size: cover;">
+                            <div class="flip-card-title-container">
+                                <p class="flip-card-title-text" data-i18n="dancingR-collaborations-societyOrganizations-title">Organizaciones de Sociedad Civil</p>
+                            </div>
+                        </div>
+
+                        <div class="flip-card-back column-flex-center" >
+                            <div class="flip-card-back-text-container">
+                                <p class="flip-card-description-text" data-i18n="dancingR-collaborations-societyOrganizations-description"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="collaborations-row-container">
+
+            <div class="collaborations-card-container">
+                <div class="flip-card">
+                    <div class="flip-card-inner" style="width: 100%; height: 100%;">
+                        <div class="flip-card-front column-flex-center" style="width: 100%; height: 100%; background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/river7.png'); background-size: cover;">
+                            <div class="flip-card-title-container">
+                                <p class="flip-card-title-text" data-i18n="dancingR-collaborations-governmentInstitutions-title">Instituciones Gubernamentales</p>
+                            </div>
+                        </div>
+
+                        <div class="flip-card-back column-flex-center" >
+                            <div class="flip-card-back-text-container">
+                                <p class="flip-card-description-text" data-i18n="dancingR-collaborations-governmentInstitutions-description"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collaborations-card-container">
+                <div class="flip-card">
+                    <div class="flip-card-inner" style="width: 100%; height: 100%;">
+                        <div class="flip-card-front column-flex-center" style="width: 100%; height: 100%; background-image: url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/DSC_0068.JPG'); background-size: cover;">
+                            <div class="flip-card-title-container">
+                                <p class="flip-card-title-text" data-i18n="dancingR-collaborations-nativeCommunities-title">Comunidades Nativas</p>
+                            </div>
+                        </div>
+
+                        <div class="flip-card-back column-flex-center" >
+                            <div class="flip-card-back-text-container">
+                                <p class="flip-card-description-text" data-i18n="dancingR-collaborations-nativeCommunities-description"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>-->
+
+    </div>
+
+</div>
+
+
+
+
+<!--
+<div style="width: 100%;
+    min-height: 90vh;
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;">
+
+
+    <div class="column-flex-center" style=" width: 74%; height: 90%">
+
+        <div style="color: #6BBDDD; align-self: flex-start; margin-bottom: 36px;">
+            <p style="font-size: 32px; color: #6BBDDD; font-family: Museo-Sans-300;">Criterios de analisis</p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; width: 100%; height: 400px">
+
+                <div style="width: 200px; height: 80px; display: flex; flex-direction: row; align-items: center;">
+                    <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/Marker.png"  style=" height: 100%; width: auto;" >
+                    <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100; margin-left: 20px;">Área de estudio</p>
+                </div>
+
+                <div style="width: 200px; height: 80px; display: flex; flex-direction: row; align-items: center;">
+                    <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/Marker.png"  style=" height: 100%; width: auto;" >
+                    <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100; margin-left: 20px;">Fechas de estudio</p>
+                </div>
+
+                <div style="width: 200px; height: 80px; display: flex; flex-direction: row; align-items: center;">
+                    <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/Marker.png"  style=" height: 100%; width: auto;" >
+                    <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100; margin-left: 20px;">Características</p>
+                </div>
+
+            </div>
+
+
+    </div>
+
+</div>
+-->
+<div style="width: 100%;
+    min-height: 40vh;
+    padding: 60px 0;
+    /*padding: 10vh 0;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;">
+
+
+    <div class="column-flex-center" style=" width: 74%; height: 90%">
+
+        <div style="color: #6BBDDD; align-self: flex-start;">
+            <p style="font-size: 32px; color: #6BBDDD; font-family: Museo-Sans-300; margin-bottom: 36px;">Criterios de análisis</p>
+            <p class="rSensing-content-text">Para poder realizar un adecuado y eficaz trabajo de campo es importante definir la ubicación de las
+                unidades de medición. Cada unidad debe de tener en cuenta la dinámica multitemporal de los ríos, así
+
+                como la temporalidad en la que se realizará el trabajo de campo, para poder establecer sus puntos de
+                medición.</p>
+            <p class="rSensing-content-text">Respecto a la ubicación espacial de las unidades de medición, estas se establecen en lugares de poca
+                migración para que puedan analizarse en el tiempo. Por otro lado, hay ubicaciones que obedecen a la
+                biodiversidad, deforestación, minería ilegal e informal u otra actividad que se quiere evaluar en el río.</p>
+            <p class="rSensing-content-text">Respecto a la temporalidad, lo ideal es realizar mediciones en las épocas de vaciante, creciente y en sus
+                respectivas transiciones, sin embargo, debido a la logística que involucra las mediciones en la Amazonía,
+                lo mínimo y aceptable es realizar mediciones en vaciante y creciente.</p>
+
+        </div>
+
+        <!--<div style="display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; width: 100%; height: 400px">
+
+            <div style="width: 200px; height: 80px; display: flex; flex-direction: row; align-items: center;">
+                <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/Marker.png"  style=" height: 100%; width: auto;" >
+                <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100; margin-left: 20px;">Área de estudio</p>
+            </div>
+
+            <div style="width: 200px; height: 80px; display: flex; flex-direction: row; align-items: center;">
+                <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/Marker.png"  style=" height: 100%; width: auto;" >
+                <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100; margin-left: 20px;">Fechas de estudio</p>
+            </div>
+
+            <div style="width: 200px; height: 80px; display: flex; flex-direction: row; align-items: center;">
+                <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/Marker.png"  style=" height: 100%; width: auto;" >
+                <p style="font-size: 22px; color: #4D4D4D; font-family: Museo-Sans-100; margin-left: 20px;">Características</p>
+            </div>
+
+        </div>-->
+
+
+    </div>
+
+</div>
+
+
+
+
+<!-- 6 -->
+<!--<div id="rSensing-NEW-section">
+
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; width: 74%; height: 90%">
+        <div class="column-flex-center" style="width: 50%; height: 100%;">
+            <div style="align-self: flex-start">
+                <p class="rSensing-title-blue-text">Lorem Ipsum <span style="color: #333333;    "></span> </p>
+            </div>
+            <p class="rSensing-content-text" data-i18n="dancingR-rSensing-processing-text"></p>
+        </div>
+        <div class="column-flex-center" style="width: 50%;  height: 72%;">
+            <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/peru_white.png"  style=" height: 100%; width: auto" >
+        </div>
+    </div>
+
+</div>-->
+
+
+
+<!-- Footer Section -->
+<div id="Footer">
+
+    <div class="footer-top-container">
+        <p class="footer-text" data-i18n="footer_address">Jr. Medrano Silva 165 Barranco</p>
+        <p class="footer-text" data-i18n="footer_phone_annex">P. (01) 2305020 Anexo 4295</p>
+        <p class="footer-text" data-i18n="footer_web">W. http://www.cita.utec.edu.pe/</p>
+        <p class="footer-text" data-i18n="footer_mail">C. cita@utec.edu.pe</p>
+
+        <div class="row-flex">
+            <div class="footer-logo-container" >
+                <a href="https://www.facebook.com/CITAUTEC/" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/facebook_circle_gray.png" width="100%" height="100%"></a>
+            </div>
+            <div class="footer-logo-container">
+                <a href="https://www.youtube.com/channel/UCwC0Nzlv29aYXlZSMwXqgqw" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/youtube_circle_gray.png" width="100%" height="100%" ></a>
+            </div>
+            <div class="footer-logo-container">
+                <a href="https://twitter.com/CITA_UTEC" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/twitter_circle_gray.png" width="100%" height="100%" ></a>
+            </div>
+            <div class="footer-logo-container">
+                <a href="https://www.instagram.com/cita_utec/" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/instagram_circle_gray.png" width="100%" height="100%" ></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom-container">
+        <p class="footer-text" data-i18n="footer_copy-logo">Copyright &copy 2019 CITA-UTEC.</p>
+        <span>&nbsp;</span>
+        <span class="footer-text" data-i18n="footer_copyright">All rights reserved.</span>
+    </div>
+
+</div>
+
+
+</body>
+</html>

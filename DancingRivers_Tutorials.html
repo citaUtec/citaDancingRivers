@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dancing Rivers</title>
+
+    <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+
+    <!--JQuery JS Script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <!--Bootstrap CSS Style-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+
+    <!--Bottom Cards section CSS Style-->
+    <link rel="stylesheet" href="css/bottom-cards-style.css">
+
+    <!-- Nav-Bar -->
+    <link rel="stylesheet" href="css/dancingRivers/dancing_rivers_navbar.css">
+    <!-- General CSS -->
+    <link rel="stylesheet" href="css/dancingRivers/dancing_rivers_general.css">
+
+    <!--Handling JS Scripts-->
+    <script src="./lib/CLDRPluralRuleParser/CLDRPluralRuleParser.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.messagestore.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.language.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.parser.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.emitter.js"></script>
+    <script src="./lib/jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="./lib/history/jquery.history.js"></script>
+    <script src="./lib/url/url.min.js"></script>
+
+    <!--New layout script-->
+    <script type="text/javascript" src="./js/dancingRivers/dancingRivers.js"></script>
+
+    <script type="text/javascript" src="js/index/language_handler_dancingRivers.js"></script>
+
+<style>
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    body, html {
+        /*height: 100%;*/
+        width: 100vw;
+        /*position: absolute;*/
+        overflow-x: hidden;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(255,255,255,1);
+        scroll-behavior: smooth;
+    }
+
+    @font-face {
+        font-family: Museo-Sans-100;
+        src: url("./font/Museo Sans 100/MuseoSans-100.otf");
+    }
+    @font-face {
+        font-family: Museo-Sans-300;
+        src: url("./font/Museo Sans 300/MuseoSans-300.otf");
+    }
+    @font-face {
+        font-family: Museo-Sans-500;
+        src: url("./font/Museo Sans 500/MuseoSans-500.otf");
+    }
+    @font-face {
+        font-family: Museo-Sans-700;
+        src: url("./font/Museo Sans 700/MuseoSans-700.otf");
+    }
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+
+<div id="Header" style="position: fixed;">
+    <div class="upper-header" style="display: flex; align-items: center; justify-content: center;">
+
+        <div style="width: 74%; display: flex; align-items: center; justify-content: flex-start;">
+
+            <div style="width: 20%">
+                <a href="https://citautec.github.io/citaVisualizer/map.html#" target="_blank">
+                    <button class="map-data-button" data-i18n="dancingR-button-mapData">Map Data</button>
+                </a>
+            </div>
+
+            <div style="width: 80%; display: flex; align-items: center; justify-content: flex-end;">
+                <button id="btn_es" class="idiom-btn-1" onclick="passLanguage('es')">Español</button>
+                <button type="button" disabled id="btn_en" class="idiom-btn-2" onclick="passLanguage('en')">English</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="NavBar" style=" display: flex; justify-content: center; align-items: center;">
+
+        <div style="width: 74%; display: flex; align-items: center; justify-content: space-between;">
+            <div style="min-width: 18%; display: flex; justify-content: flex-start; align-items: center;">
+
+                <img id="logo-dancing-rivers"  onclick="location.href='index.html'" src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/logo-rios-danzantes.png" >
+            </div>
+
+            <div style=" width: 74%; display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; justify-content: flex-end;">
+
+                <div style="width: 100%; ">
+
+                    <ul class="hList" style="display: flex; align-items: center; margin: 0;">
+                        <li>
+                            <a class="menu" >
+                                <h2  class="menu-title" onclick="location.href='index.html';"  data-i18n="amazon-home-tab">Inicio</h2>
+                                <ul>
+                                    <li><a href='DancingRivers_Team.html' data-i18n="amazon-home-tab-team">Nuestro Equipo</a></li>
+                                    <li><a href='DancingRivers_Collaborations.html' data-i18n="amazon-home-tab-work">¿Con quienes trabajamos?</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" onclick="location.href='DancingRivers_Research.html';" data-i18n="amazon-research-tab">Investigación</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" data-i18n="amazon-methodology-tab" style="cursor: default;">Metodología</h2>
+                                <ul>
+                                    <li><a href='DancingRivers_RemoteSensing.html' data-i18n="amazon-methodology-tab-remote-sensing">Sensoramiento Remoto</a></li>
+                                    <li style="word-wrap: break-word;"><a href='DancingRivers_FieldMeasurements.html' data-i18n="amazon-methodology-tab-field-measurements">Mediciones de campo</a>
+                                        <ul>
+                                            <li><a href="DancingRivers_Hydrodynamic.html">Unidad Hidrodinámica</a></li>
+                                            <li><a href="DancingRivers_Hydrogeomorphological.html">Unidad Hidrogeomorfológica</a></li>
+                                            <li><a href="DancingRivers_Hydrosedimentological.html">Unidad Hidrosedimentológica</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="pointer_default" data-i18n="amazon-methodology-tab-numeric-modeling">Modelamiento numérico</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" onclick="location.href='DancingRivers_DataAndTools.html';"  data-i18n="amazon-data-tools-tab">Datos</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" style="color: #00BCD4; font-family: Museo-Sans-500; cursor: default;" data-i18n="amazon-publications-tab">Publicaciones</h2>
+                                <ul>
+                                    <li><a href='DancingRivers_Newsletters.html' data-i18n="amazon-publications-tab-newsletters">Boletines</a></li>
+                                    <li><a href='DancingRivers_Tutorials.html' data-i18n="amazon-publications-tab-tutorials">Tutoriales</a></li>
+                                    <li><a class="pointer_default" data-i18n="amazon-publications-tab-infographics">Infografías</a></li>
+                                    <li><a class="pointer_default" data-i18n="amazon-publications-tab-handbooks">Handbooks</a></li>
+                                    <li><a class="pointer_default" data-i18n="amazon-publications-tab-papers">Papers</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu">
+                                <h2 class="menu-title" onclick="location.href='DancingRivers_Workshops.html';" data-i18n="amazon-education-tab">Educación</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<style>
+    #tutorials-intro-section{
+        width: 100vw;
+        height: 86vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 14vh;
+        background: linear-gradient( rgba(0,0,0,0.0), rgba(0,0,0,0.5)) , url('https://citadancingrivers.s3-us-west-1.amazonaws.com/img/DSC_0116.jpg');
+        background-size: cover;
+
+    }
+</style>
+
+
+<div id="tutorials-intro-section">
+
+    <div class="intro-container-out">
+        <div class="intro-container-in">
+            <div class="intro-text-container" >
+                <div class="intro-text-container-inner">
+                    <p class="main-title-white-text" data-i18n="dancingR-tutorials-main-title"></p>
+                    <p class="main-description-white-text" data-i18n="dancingR-publications-sub-title"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<!-- Tutorials Section --->
+<div id="tutorials-section">
+
+    <div class="tutorials-section-inner">
+
+        <!-- Guía para la Obtención de Imágenes Satelitales en Google Earth Engine mediante el Code Editor -->
+        <div class="tutorials-row-container" >
+            <div style="width: 35%;  height: 100%; margin-right: 5vh ">
+                <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/gota-background-3.png"  style=" width: 100%; height: auto" >
+            </div>
+            <div class="tutorials-text-column-container">
+                <div>
+                    <p class="tutorials-title-text" data-i18n="dancingR-tutorials-title-1"></p>
+                    <p class="tutorials-description-text" data-i18n="dancingR-tutorials-description-1"></p>
+                </div>
+                <div class="tutorials-link-container" style="max-width: 62%">
+                    <p  class="text-p-link"><a class="text-link" style="color: #0071BC; font-size: 20px; font-family: Museo-Sans-300;" target="_blank" data-i18n="dancingR-tutorials-document-name-1"></a></p>
+                    <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/icon-pdf.png"  style=" height: auto; width: 24px; margin-left: 15px; cursor: pointer;" >
+                </div>
+            </div>
+        </div>
+
+        <!-- Guía para el Preprocesamiento de Imágenes Satelitales con el GIS Toolbox -->
+        <div class="tutorials-row-container" >
+            <div style="width: 35%;  height: 100%; margin-right: 5vh ">
+                <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/gota-background-3.png"  style=" width: 100%; height: auto" >
+            </div>
+            <div class="tutorials-text-column-container">
+                <div>
+                    <p class="tutorials-title-text" data-i18n="dancingR-tutorials-title-2">Guía para el Preprocesamiento de Imágenes Satelitales con el GIS Toolbox</p>
+                    <p class="tutorials-description-text" data-i18n="dancingR-tutorials-description-2">El objetivo del GIS Toolbox es automatizar el pre procesamiento de imágenes satelitales, facilitando la obtención del polígono y línea central del río a partir de una imagen satelital con un índice de detección de superficies con cobertura de agua.</p>
+                </div>
+
+                <div class="tutorials-link-container" style="max-width: 62%">
+                    <p  class="text-p-link"><a class="text-link" style="color: #0071BC; font-size: 20px; font-family: Museo-Sans-300;" target="_blank" data-i18n="dancingR-tutorials-document-name-2"></a></p>
+                    <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/icon-pdf.png"  style=" height: auto; width: 24px; margin-left: 15px; cursor: pointer;" >
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Guía Metodológica para la Caracterización de Ríos Meándricos y Multicanal -->
+        <div class="tutorials-row-container">
+            <div style="width: 35%;  height: 100%; margin-right: 5vh ">
+                <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/gota-background-3.png"  style=" width: 100%; height: auto" >
+            </div>
+            <div class="tutorials-text-column-container">
+                <div>
+                    <p class="tutorials-title-text" data-i18n="dancingR-tutorials-title-3"></p>
+                    <p class="tutorials-description-text" data-i18n="dancingR-tutorials-description-3"></p>
+                </div>
+                <div class="tutorials-link-container">
+                    <p style="margin: 0;"><a class="text-link" style="color: #0071BC; font-size: 20px; font-family: Museo-Sans-300" target="_blank" data-i18n="dancingR-tutorials-document-name-3"></a></p>
+                    <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/icon-pdf.png"  style=" height: auto; width: 24px; margin-left: 20px; cursor: pointer;" >
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Guía Metodológica de la Unidad Hidrodinámica -->
+        <div class="tutorials-row-container">
+            <div style="width: 35%;  height: 100%; margin-right: 5vh ">
+                <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/gota-background-3.png"  style=" width: 100%; height: auto" >
+            </div>
+            <div class="tutorials-text-column-container">
+                <div>
+                    <p class="tutorials-title-text" data-i18n="dancingR-tutorials-title-4"></p>
+                    <p class="tutorials-description-text" data-i18n="dancingR-tutorials-description-4"></p>
+                </div>
+                <div class="tutorials-link-container">
+                    <p style="margin: 0;"><a class="text-link" style="color: #0071BC; font-size: 20px; font-family: Museo-Sans-300" target="_blank" data-i18n="dancingR-tutorials-document-name-4"></a></p>
+                    <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/icon-pdf.png"  style=" height: auto; width: 24px; margin-left: 20px; cursor: pointer;" >
+                </div>
+            </div>
+        </div>
+
+        <!-- Guía Metodológica de la Unidad Hidrogeomorfológica -->
+        <div class="tutorials-row-container">
+            <div style="width: 35%;  height: 100%; margin-right: 5vh ">
+                <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/gota-background-3.png"  style=" width: 100%; height: auto" >
+            </div>
+            <div class="tutorials-text-column-container">
+                <div>
+                    <p class="tutorials-title-text" data-i18n="dancingR-tutorials-title-5"></p>
+                    <p class="tutorials-description-text" data-i18n="dancingR-tutorials-description-5"></p>
+                </div>
+                <div class="tutorials-link-container">
+                    <p style="margin: 0;"><a class="text-link" style="color: #0071BC; font-size: 20px; font-family: Museo-Sans-300" target="_blank" data-i18n="dancingR-tutorials-document-name-5"></a></p>
+                    <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/icon-pdf.png"  style=" height: auto; width: 24px; margin-left: 20px; cursor: pointer;" >
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Guía Metodológica de la Unidad Hidrosedimentológica -->
+        <div class="tutorials-row-container">
+            <div style="width: 35%;  height: 100%; margin-right: 5vh ">
+                <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/gota-background-3.png"  style=" width: 100%; height: auto" >
+            </div>
+            <div class="tutorials-text-column-container">
+                <div>
+                    <p class="tutorials-title-text" data-i18n="dancingR-tutorials-title-6"></p>
+                    <p class="tutorials-description-text" data-i18n="dancingR-tutorials-description-6"></p>
+                </div>
+                <div class="tutorials-link-container">
+                    <p style="margin: 0;"><a class="text-link" style="color: #0071BC; font-size: 20px; font-family: Museo-Sans-300" target="_blank" data-i18n="dancingR-tutorials-document-name-4"></a></p>
+                    <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/icon-pdf.png"  style=" height: auto; width: 24px; margin-left: 20px; cursor: pointer;" >
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</div>
+
+
+<!-- Footer Section -->
+<div id="Footer">
+
+    <div class="footer-top-container">
+        <p class="footer-text" data-i18n="footer_address">Jr. Medrano Silva 165 Barranco</p>
+        <p class="footer-text" data-i18n="footer_phone_annex">P. (01) 2305020 Anexo 4295</p>
+        <p class="footer-text" data-i18n="footer_web">W. http://www.cita.utec.edu.pe/</p>
+        <p class="footer-text" data-i18n="footer_mail">C. cita@utec.edu.pe</p>
+
+        <div class="row-flex">
+            <div class="footer-logo-container" >
+                <a href="https://www.facebook.com/CITAUTEC/" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/facebook_circle_gray.png" width="100%" height="100%"></a>
+            </div>
+            <div class="footer-logo-container">
+                <a href="https://www.youtube.com/channel/UCwC0Nzlv29aYXlZSMwXqgqw" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/youtube_circle_gray.png" width="100%" height="100%" ></a>
+            </div>
+            <div class="footer-logo-container">
+                <a href="https://twitter.com/CITA_UTEC" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/twitter_circle_gray.png" width="100%" height="100%" ></a>
+            </div>
+            <div class="footer-logo-container">
+                <a href="https://www.instagram.com/cita_utec/" target="_blank"><img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/instagram_circle_gray.png" width="100%" height="100%" ></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom-container">
+        <p class="footer-text" data-i18n="footer_copy-logo">Copyright &copy 2019 CITA-UTEC.</p>
+        <span>&nbsp;</span>
+        <span class="footer-text" data-i18n="footer_copyright">All rights reserved.</span>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
