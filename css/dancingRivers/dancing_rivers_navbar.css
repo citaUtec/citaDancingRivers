@@ -17,15 +17,9 @@
     /*padding: 5% 0 5% 0;*/
     padding: 5% 0 5% 0;
     background: white;
-<<<<<<< HEAD
     text-align: center;
-/*    text-align: left;
-    padding-left: 8px;*/
-=======
-    /*text-align: center;*/
-    text-align: left;
-    padding-left: 8px;
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
+    /*    text-align: left;
+        padding-left: 8px;*/
     /*color: black;*/
     color: #808080;
 
@@ -47,11 +41,7 @@
 }
 
 .menu-dropdown {
-<<<<<<< HEAD
     /*min-width: 100%;*/
-=======
-    min-width: 100%;
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
     /*max-width: 100%;*/
     padding: 15px 0;
     position: absolute;
@@ -62,15 +52,12 @@
     /*color: #999999;*/
     color: #666666;
     font-family: Museo-Sans-100;
-<<<<<<< HEAD
 
 
 
     display:none;
     position:absolute;
     min-width:140px;
-=======
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 }
 
 .menu:not(:hover) > .menu-dropdown {
@@ -91,10 +78,7 @@
     overflow: hidden;
     height: 30px;
     padding: 3px 10px;
-<<<<<<< HEAD
     /*padding: 3px 10px;*/
-=======
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
     background: rgba(0, 0, 0, 0);
     white-space: nowrap;
     transition: 0.5s height cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s padding cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s margin cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s 0.2s color, 0.2s background-color;
@@ -106,7 +90,6 @@
     /*padding: 20px;*/
     /*margin-bottom: 0px;
     margin-top: 8px;*/
-<<<<<<< HEAD
     /*margin: 10px 20px;*/
     /*margin: 10px 0px;*/
     padding: 0 20px;
@@ -114,9 +97,6 @@
     /*text-decoration: none;*/
     /*list-style-type:none*/
     /*list-style: none;*/
-=======
-    margin: 10px 20px;
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 }
 
 .menu-dropdown > *:hover {
@@ -133,7 +113,6 @@
     z-index: 99;
 }
 
-<<<<<<< HEAD
 
 /*.menu:not(:hover) > .menu-dropdown li:hover > * {
     visibility: visible;
@@ -331,8 +310,6 @@ ul, ol {
 
 
 
-=======
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 .hList{
     list-style: none;
 }
@@ -340,10 +317,7 @@ ul, ol {
 .hList > * {
     float: left;
     width: 16.666%;
-<<<<<<< HEAD
     font-family: Museo-Sans-100;
-=======
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 }
 
 .hList > * + * {
@@ -351,7 +325,6 @@ ul, ol {
 }
 
 
-<<<<<<< HEAD
 /**/
 /*.hList li:hover > ul {
     display:block;
@@ -445,5 +418,3 @@ ul, ol {
 .pointer_default{
     cursor: default !important;
 }
-=======
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7

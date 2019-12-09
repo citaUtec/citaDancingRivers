@@ -117,11 +117,7 @@
 
   "dancingR-title-word-dancing-rivers": "Ríos Danzantes ",
   "dancingR-title-word-amazon-basin": "en la Cuenca Amazónica",
-<<<<<<< HEAD
   "dancingR-subtitle": "La ciencia detrás del movimientos de los ríos",
-=======
-  "dancingR-subtitle": "La ciencia detrás del movimientos de los ríos.",
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
   "dancingR-gratitude-word-by": "creado por",
   "dancingR-gratitude-word-contribution": "en colaboración con",
   "dancingR-dancingRivers-description": "Este portal recoge la investigación, análisis y metodología desarrollada para caracterizar la\nmorfodinámica planimétrica (análisis espacial con sensoramiento remoto) y altimétrica\n(descripción de las formas del lecho del río y el transporte de sedimentos) de los principales\nríos amazónicos: Marañón, Huallaga, Ucayali y Amazonas, con el propósito de conocer y\ncomprender mejor su dinámica física.",
@@ -222,11 +218,7 @@
   "dancingR-rivers-button-moreAbout": "Conoce más",
 
 
-<<<<<<< HEAD
   "dancingR-rivers-riverTypes-title": "Diversidad de ríos",
-=======
-  "dancingR-rivers-riverTypes-title": "Tipos de Ríos",
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
   "dancingR-rivers-riverTypes-description": "En la cuenca amazónica hay, principalmente, dos tipos de ríos: los meándricos (p.e. Huallaga, Ucayali) y los multicanales (p.e. Marañón, Amazonas). El comportamiento morfodinámico y altimétrico de estos dos ríos es diferente, por lo que la evaluación de diferentes parámetros físicos dependerá del tipo de sistema fluvial.\nLos ríos meándricos son aquellos que forman curvas en su trayecto, las cuales se van formando debido al ajuste del canal a la pendiente. Los canales evolucionan con el tiempo a partir de la migración de las curvas y presentan, por un lado, una zona de erosión y, por el lado contrario, una zona de deposición. Estos ríos se caracterizan por ser ríos con alta sinuosidad y migración a lo largo de su curso, así como la presencia de paleocauces.\nLos ríos multicanal son aquellos que presentan una red de canales divergentes y convergentes que forman islas estables con vegetación. Estas islas permiten albergar centros poblados y actividades agrícolas sobre ellas, como en el caso de muchas zonas a lo largo del río Amazonas.",
 
 
@@ -269,11 +261,7 @@
   "dancingR-home-statistics-info-1": "Kilómetros estudiados",
   "dancingR-home-statistics-number-2": "30",
   "dancingR-home-statistics-info-2": "Años de análisis multitemporal",
-<<<<<<< HEAD
   "dancingR-home-statistics-number-3": "2018",
-=======
-  "dancingR-home-statistics-number-3": "2017",
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
   "dancingR-home-statistics-info-3": "Inicio de mediciones de campo",
   "dancingR-home-statistics-number-4": "20+",
   "dancingR-home-statistics-info-4": "Charlas y talleres",
@@ -309,11 +297,7 @@
   "dancingR-newsletters-document-name-1": "Descargar",
   "dancingR-newsletters-title-2": "Mejores prácticas para el estudio de los ríos amazónicos frente al desarrollo de infraestructura. Caso EIA-d Hidrovía Amazónica",
   "dancingR-newsletters-description-2": "El presente análisis representa un estudio científico que tiene como objetivo mejorar el entendimiento de la geomorfología de los ríos amazónicos, de manera que se genere el menor número de impactos en los proyectos de infraestructura. En ese sentido, este estudio demuestra que el EIA-d presentado para el proyecto Hidrovía Amazónica carece de rigurosidad técnica y científica, los cuales son requisitos indispensables antes de implementar este tipo de proyectos.",
-<<<<<<< HEAD
   "dancingR-newsletters-document-name-2": "Descargar",
-=======
-  "dancingR-newsletters-document-name-2": "Boletin-N2-CITA ",
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 
 
 
@@ -365,21 +349,12 @@
   "dancingR-workshops-main-title": "Charlas y Talleres",
   "dancingR-workshops-main-description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
 
-<<<<<<< HEAD
   "dancingR-workshops-workshop-title-1": "Mejores prácticas para el estudio de los ríos amazónicos frente al desarrollo de infraestructura. Caso EIA-d Hidrovía Amazónica",
   "dancingR-workshops-workshop-place-1": "Lugar: UTEC, Lima",
   "dancingR-workshops-workshop-date-1": "Fecha: 11 de julio del 2019",
   "dancingR-workshops-workshop-title-2": "Estudio de Impacto Ambiental del Proyecto Hidrovía Amazónica: Alcances y vacíos",
   "dancingR-workshops-workshop-place-2": "Lugar: Yurimaguas",
   "dancingR-workshops-workshop-date-2": "Fecha: 3 de julio del 2019",
-=======
-  "dancingR-workshops-workshop-title-1": "Estudio de Impacto Ambiental del Proyecto Hidrovía Amazónica: Alcances y vacíos",
-  "dancingR-workshops-workshop-place-1": "Lugar: Yurimaguas",
-  "dancingR-workshops-workshop-date-1": "Fecha: 3 de julio del 2019",
-  "dancingR-workshops-workshop-title-2": "Mejores prácticas para el estudio de los ríos amazónicos frente al desarrollo de infraestructura. Caso EIA-d Hidrovía Amazónica",
-  "dancingR-workshops-workshop-place-2": "Lugar: UTEC, Lima",
-  "dancingR-workshops-workshop-date-2": "Fecha: 11 de julio del 2019",
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
   "dancingR-workshops-workshop-title-3": "Estudio de Impacto Ambiental del Proyecto Hidrovía Amazónica: Alcances y vacíos",
   "dancingR-workshops-workshop-place-3": "Lugar: Iquitos",
   "dancingR-workshops-workshop-date-3": "Fecha: 28 de junio del 2019",
@@ -441,11 +416,7 @@
   "dancingR-research-sub-title": "El estudio de los ríos amazónicos requiere una mirada más profunda a sus características y su rol como fuente de biodiversidad",
   "dancingR-dataTools-sub-title": "Información obtenida sobre los ríos amazónicos",
   "dancingR-publications-sub-title": "Material elaborado acerca del estudio de ríos amazónicos",
-<<<<<<< HEAD
   "dancingR-workshops-sub-title": "Fortalecimiento de capacidades sobre el comportamiento de nuestros ríos amazónicos y las metodologías para estudiarlos."
-=======
-  "dancingR-workshops-sub-title": "Fortalecimiento de capacidades"
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 
 
 
