@@ -5,9 +5,9 @@ var set_locale_to = function(locale) {
 
     if (locale) {$.i18n().locale = locale;}
     $('body').i18n();
-/*
-    document.getElementById("dropdownMenuButtonTop").innerHTML = $.i18n('dropdown-UHD-section-item', UHDMarkerIndexTop.toString());
-*/
+    /*
+        document.getElementById("dropdownMenuButtonTop").innerHTML = $.i18n('dropdown-UHD-section-item', UHDMarkerIndexTop.toString());
+    */
 
 };
 
@@ -22,7 +22,7 @@ var set_locale_to = function(locale) {
 var lnge = 'es';
 
 $(document).ready(function() {
-     /*var ga = localStorage.getItem("storageName");*/
+    /*var ga = localStorage.getItem("storageName");*/
     lnge = localStorage.getItem("storageName");
     /*console.log("passName es:." +  ga);*/
 
@@ -47,15 +47,15 @@ $(document).ready(function() {
         */
         set_locale_to("es");
         switchLanguage(lnge);
-    /*
-            console.log("VALOR ES" + document.getElementById("logo-dancing-rivers").style.color);
-            if(document.getElementById("logo-dancing-rivers").style.color === "red"){
-                switchLanguage("es");
-            }
-            if(document.getElementById("logo-dancing-rivers").style.color === "blue"){
-                switchLanguage("en");
-            }
-    */
+        /*
+                console.log("VALOR ES" + document.getElementById("logo-dancing-rivers").style.color);
+                if(document.getElementById("logo-dancing-rivers").style.color === "red"){
+                    switchLanguage("es");
+                }
+                if(document.getElementById("logo-dancing-rivers").style.color === "blue"){
+                    switchLanguage("en");
+                }
+        */
 
 
         /*switchLanguage("es");*/
@@ -88,43 +88,43 @@ $(document).ready(function() {
 
     }
 
-document.getElementById("btn_es").addEventListener("click", function () {
-    document.getElementById("btn_es").className = "idiom-btn-1";
-    document.getElementById("btn_en").className = "idiom-btn-2";
+    document.getElementById("btn_es").addEventListener("click", function () {
+        document.getElementById("btn_es").className = "idiom-btn-1";
+        document.getElementById("btn_en").className = "idiom-btn-2";
 
-    /*logo-rios-danzantes.png*/
-    document.getElementById("logo-dancing-rivers").src = "https://citadancingrivers.s3-us-west-1.amazonaws.com/img/RD-logo-blue.png";
-    /*idiom = "Spanish";
-    language = "es";
+        /*logo-rios-danzantes.png*/
+        document.getElementById("logo-dancing-rivers").src = "https://citadancingrivers.s3-us-west-1.amazonaws.com/img/RD-logo-blue.png";
+        /*idiom = "Spanish";
+        language = "es";
 
-    set_locale_to(language);*/
-    /* IDIOMA = 'es';*/
-    /*var5 = "es";
-    band = "yes";*/
-    /*document.getElementById("logo-dancing-rivers").style.color = "red";*/
-});
+        set_locale_to(language);*/
+        /* IDIOMA = 'es';*/
+        /*var5 = "es";
+        band = "yes";*/
+        /*document.getElementById("logo-dancing-rivers").style.color = "red";*/
+    });
 
 
-document.getElementById("btn_en").addEventListener("click", function () {
-    document.getElementById("btn_en").className = "idiom-btn-1";
-    document.getElementById("btn_es").className = "idiom-btn-2";
+    document.getElementById("btn_en").addEventListener("click", function () {
+        document.getElementById("btn_en").className = "idiom-btn-1";
+        document.getElementById("btn_es").className = "idiom-btn-2";
 
-    /*document.getElementById("logo-dancing-rivers").src = "./img/dancingRivers/logo-dancing-rivers.png";*/
-    /*DancingRivers-newLogo.png*/
-    document.getElementById("logo-dancing-rivers").src = "https://citadancingrivers.s3-us-west-1.amazonaws.com/img/DR-logo-blue.png";
+        /*document.getElementById("logo-dancing-rivers").src = "./img/dancingRivers/logo-dancing-rivers.png";*/
+        /*DancingRivers-newLogo.png*/
+        document.getElementById("logo-dancing-rivers").src = "https://citadancingrivers.s3-us-west-1.amazonaws.com/img/DR-logo-blue.png";
 
-    /*document.getElementById("logo-dancing-rivers").style.color = "blue";*/
-    /*idiom = "English";
-    language = "en";
+        /*document.getElementById("logo-dancing-rivers").style.color = "blue";*/
+        /*idiom = "English";
+        language = "en";
 
-    set_locale_to(language);*/
-    /*var gaaa = myFunction(3,4);
-    console.log(gaaa);*/
-   /* IDIOMA = 'en';*/
-    /*var5 = "en";
-    band = "no";*/
+        set_locale_to(language);*/
+        /*var gaaa = myFunction(3,4);
+        console.log(gaaa);*/
+        /* IDIOMA = 'en';*/
+        /*var5 = "en";
+        band = "no";*/
 
-});
+    });
 
 
 

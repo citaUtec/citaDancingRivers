@@ -28,17 +28,13 @@ function addSinglePolygonToMap(JSON_path, river_data_layer, strokeColor, strokeO
 
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 function addRegionJSONToMap(JSON_path, river_data_layer, strokeColor, strokeOpacity, fillColor, fillOpacity) {
 
     $.getJSON(JSON_path, function (json) {
 
         // console.log(river_data_layer);
 
-<<<<<<< HEAD
 
 
         river_data_layer.addGeoJson(json);
@@ -57,12 +53,6 @@ function addRegionJSONToMap(JSON_path, river_data_layer, strokeColor, strokeOpac
                     return {strokeColor: "#FFFFFF", strokeOpacity: 1.0, fillColor: "#03BEDF", fillOpacity: 1.0, strokeWeight: 1}
                 }*/
 
-=======
-        river_data_layer.addGeoJson(json);
-        river_data_layer.setStyle(
-
-            function(feature) {
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
                 if(feature.getProperty('workshop_enable') === 1){
                     return {strokeColor: "#FFFFFF", strokeOpacity: 1.0, fillColor: "#8CE1F0", fillOpacity: 1.0, strokeWeight: 1}
                 }
@@ -75,7 +65,6 @@ function addRegionJSONToMap(JSON_path, river_data_layer, strokeColor, strokeOpac
 
         river_data_layer.forEach(function (feature) {
 
-<<<<<<< HEAD
             if(feature.getProperty('NAME_1') === "Loreto"){
                 // return {strokeColor: "#FFFFFF", strokeOpacity: 1.0, fillColor: "#FF00FF", fillOpacity: 1.0, strokeWeight: 1}
                 // return {strokeColor: "#FFFFFF", strokeOpacity: 1.0, fillColor: "#FF00FF", fillOpacity: 1.0, strokeWeight: 1}
@@ -85,15 +74,10 @@ function addRegionJSONToMap(JSON_path, river_data_layer, strokeColor, strokeOpac
 
             /*if(feature.getProperty("workshop_enable") === 1){
                 /!*river_data_layer.overrideStyle(feature, {strokeColor: "#FFFFFF", strokeOpacity: 1.0, fillColor: "#00BFDF", fillOpacity: 1.0, strokeWeight: 1});*!/
-=======
-            if(feature.getProperty("workshop_enable") === 1){
-                /*river_data_layer.overrideStyle(feature, {strokeColor: "#FFFFFF", strokeOpacity: 1.0, fillColor: "#00BFDF", fillOpacity: 1.0, strokeWeight: 1});*/
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
                 river_data_layer.overrideStyle(feature, {strokeColor: "#FFFFFF", strokeOpacity: 1.0, fillColor: "#8CE1F0", fillOpacity: 1.0, strokeWeight: 1});
             }else{
                 river_data_layer.overrideStyle(feature, {strokeColor: "#FFFFFF", strokeOpacity: 1.0, fillColor: "#CCCCCC", fillOpacity: 1.0, strokeWeight: 1});
 
-<<<<<<< HEAD
             }*/
             /*if(feature.getProperty("NAME_0") === "Loreto"){
                 /!*river_data_layer.overrideStyle(feature, {strokeColor: "#FFFFFF", strokeOpacity: 1.0, fillColor: "#00BFDF", fillOpacity: 1.0, strokeWeight: 1});*!/
@@ -109,21 +93,11 @@ function addRegionJSONToMap(JSON_path, river_data_layer, strokeColor, strokeOpac
 
 
 
-=======
-            }
-
-        });
-
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
         river_data_layer.addListener('click', function (event) {
             // console.log(event.feature.getProperty("NAME_1"));
             var region = event.feature.getProperty("NAME_1");
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
             if(event.feature.getProperty("workshop_enable") === 1){
 
                 river_data_layer.forEach(function (feature) {
@@ -145,11 +119,8 @@ function addRegionJSONToMap(JSON_path, river_data_layer, strokeColor, strokeOpac
 // event.overrideStyle(feature, {strokeColor: "#FFFFFF", strokeOpacity: 1.0, fillColor: "#03BEDF", fillOpacity: 1.0, strokeWeight: 1});
 // river_data_layer.overrideStyle(event, {strokeColor: "#FFFFFF", strokeOpacity: 1.0, fillColor: "#03BEDF", fillOpacity: 1.0, strokeWeight: 1});
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 function addMarkersGeoJSON(JSON_path, river_data_layer, markerIconImagePath, clickCallback, mouseoverCallback, mouseoutCallback) {
 
     $.getJSON(JSON_path, function (json) {
@@ -177,26 +148,16 @@ function addMarkersGeoJSON(JSON_path, river_data_layer, markerIconImagePath, cli
 
 }
 
-<<<<<<< HEAD
 
 
 /*function markerClickCallback(event){
-=======
-function markerClickCallback(event){
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 
     //map.setZoom(6);
     //map.panTo(new google.maps.LatLng(event.feature.getProperty("latitud"), event.feature.getProperty("longitud")));
 
-<<<<<<< HEAD
     /!*document.getElementById("stat_workshop1").innerText =*!/
 
 }*/
-=======
-    /*document.getElementById("stat_workshop1").innerText =*/
-
-}
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 
 function initMap() {
 
@@ -211,12 +172,8 @@ function initMap() {
     /*var peruBounds = {north: 2.8, south: -19.5, west: -85.0, east: -65.0};*/
     /*var peruBounds = {north: -0.02, south: -18.3955, west: -81.455, east: -68.361};*/
 
-<<<<<<< HEAD
     // var peruBounds = {north: -2.0, south: -18.3955, west: -81.455, east: -68.361};
     var peruBounds = {north: -0.08, south: -18.3955, west: -81.455, east: -68.361};
-=======
-    var peruBounds = {north: -0.02, south: -18.3955, west: -81.455, east: -68.361};
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
     /*var markerJSON = [
 
         {
@@ -260,10 +217,6 @@ function initMap() {
                 stylers: [{color: '#ffffff'}]
             }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
         ]*/
         styles: [
             {
@@ -381,7 +334,6 @@ function initMap() {
     var markers_layer = new google.maps.Data();
 
 
-<<<<<<< HEAD
     /*if(regions_layer.getProperty('NAME_0') === "Loreto"){
         /!*river_data_layer.overrideStyle(feature, {strokeColor: "#FFFFFF", strokeOpacity: 1.0, fillColor: "#00BFDF", fillOpacity: 1.0, strokeWeight: 1});*!/
         regions_layer.overrideStyle(feature, {strokeColor: "#FFFFFF", strokeOpacity: 1.0, fillColor: "#F0F000", fillOpacity: 1.0, strokeWeight: 1});
@@ -389,24 +341,20 @@ function initMap() {
 
 
     // bounds_layer(1).fillColor = '#03BEDF';
-     /*Markers*/
-=======
     /*Markers*/
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
-/*
-    addMarkersGeoJSON("././data/workshops/workshops_markers.geojson", markers_layer, "././img/marker-icons/rojo.png", markerClickCallback, null, null);
-*/
-/*
-    addSinglePolygonToMap("././data/workshops/PER_BOUND.geojson", bounds_layer, "#FFFFFF", 1.0, "#FFFFFF", 1.0);
-*/
+    /*
+        addMarkersGeoJSON("././data/workshops/workshops_markers.geojson", markers_layer, "././img/marker-icons/rojo.png", markerClickCallback, null, null);
+    */
+    /*
+        addSinglePolygonToMap("././data/workshops/PER_BOUND.geojson", bounds_layer, "#FFFFFF", 1.0, "#FFFFFF", 1.0);
+    */
     // addSinglePolygonToMap("././data/workshops/Mascara.geojson", bounds_layer, "#FFFFFF", 1.0, "#FFFFFF", 1.0);
-/*
-    addSinglePolygonToMap("././data/workshops/Mascara.geojson", bounds_layer, "#FFFFFF", 1.0, "#FFFFFF", 1.0);
+    /*
+        addSinglePolygonToMap("././data/workshops/Mascara.geojson", bounds_layer, "#FFFFFF", 1.0, "#FFFFFF", 1.0);
 
-    addRegionJSONToMap("././data/workshops/PER_regiones_flag.geojson", regions_layer, "#FFFFFF", 1.0, "#00BFDF", 1.0);
-*/
+        addRegionJSONToMap("././data/workshops/PER_regiones_flag.geojson", regions_layer, "#FFFFFF", 1.0, "#00BFDF", 1.0);
+    */
 
-<<<<<<< HEAD
 
     addSinglePolygonToMap("././data/workshops/Mascara.geojson", bounds_layer, "#FFFFFF", 1.0, "#FFFFFF", 1.0);
     addRegionJSONToMap("././data/workshops/PER_regiones_flag.geojson", regions_layer, "#FFFFFF", 1.0, "#00BFDF", 1.0);
@@ -431,11 +379,6 @@ function initMap() {
 
     }*/
 
-=======
-    addSinglePolygonToMap("././data/workshops/Mascara.geojson", bounds_layer, "#FFFFFF", 1.0, "#FFFFFF", 1.0);s
-    addRegionJSONToMap("././data/workshops/PER_regiones_flag.geojson", regions_layer, "#FFFFFF", 1.0, "#00BFDF", 1.0);
-
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
     /*river_data_layer.forEach(function (feature) {
 
         if(feature.getProperty("workshop_enable") === 1){
@@ -506,10 +449,6 @@ function initMap() {
         $("#info-loreto").fadeIn("3000");
     });*/
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
     /*marker1.addListener('click', gaaaa("#Gaaaa") );*/
     /*marker1.addListener('click', function() {
         /!*map.setZoom(8);
@@ -522,10 +461,7 @@ function initMap() {
 
 }
 
-<<<<<<< HEAD
 /*
-=======
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 function fadeInStatistics(statsDiv) {
     $(statsDiv).fadeIn("3000");
 }
@@ -533,32 +469,19 @@ function fadeInStatistics(statsDiv) {
 $(document).ready(function() {
 
 
-<<<<<<< HEAD
     /!*$("#image-containerzcvsvvddssd").click(function(){
-=======
-    /*$("#image-containerzcvsvvddssd").click(function(){
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
 /!*
         $("#Gaaaa").fadeIn("3000");
 *!/
         //$("#div1").fadeIn();
         //$("#div3").fadeIn(3000);
     });
-<<<<<<< HEAD
 *!/
     /!*document.getElementById("image-containerzcvsvvddssd").addEventListener("click", function () {
         document.getElementById("image-descriptionzfvzsv").fadeIn("3000");
     });*!/
 
     /!*document.getElementById("workshop-image-1").addEventListener("click", function () {
-=======
-*/
-    /*document.getElementById("image-containerzcvsvvddssd").addEventListener("click", function () {
-        document.getElementById("image-descriptionzfvzsv").fadeIn("3000");
-    });*/
-
-    /*document.getElementById("workshop-image-1").addEventListener("click", function () {
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
         on();
     });
     document.getElementById("workshop-image-2").addEventListener("click", function () {
@@ -579,7 +502,6 @@ $(document).ready(function() {
     document.getElementById("overlay").addEventListener("click", function () {
         off();
     });
-<<<<<<< HEAD
     *!/
 
 
@@ -591,15 +513,3 @@ $(document).ready(function() {
 
 });
 */
-=======
-    */
-
-
-    /*$("#item1").click(function(){
-        $("#image-carousel").carousel(0);
-    });*/
-
-    /*window.scrollTo( 0, 1000 );*/
-
-});
->>>>>>> 2a34dac9c1ced6e3d99a83c38271cd84847df6b7
