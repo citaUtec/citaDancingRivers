@@ -415,8 +415,8 @@
     align-items: center;
 }
 .equipment-image{
-    min-width: 175px;
-    min-height: 175px;
+    min-width: 200px;
+    min-height: 200px;
     border-radius: 50%;
     background-color: transparent;
     background-repeat: no-repeat;
@@ -424,7 +424,7 @@
     background-size: auto 100%;
 }
 .equipment-name{
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 6px;

@@ -308,7 +308,7 @@
         <div class="row-flex" style="width: 100%; justify-content: space-between">
 
             <!-- height: 100%; -->
-            <div style="width: 29%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <div id="workshops-general-statistics" style="width: 29%; height: 100%; margin-top: 30px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
 
                 <!--<img src="./img/dancingRivers/general-statistics.PNG" style=" width: 90%; height: auto; object-fit: cover">-->
 
@@ -371,7 +371,6 @@
 
 
             </div>
-
 
 
             <div id="image-container_" style="width: 33%; height: 450px;">
@@ -496,12 +495,12 @@
 
     .page-link-style1{
         /*color: #007bff;*/
-        color: #5E77A1 !important;
+        color: #0BBCDD !important;
+        /*color: #5E77A1 !important;*/
         background-color: #fff;
         /*border: 1px solid #dee2e6;*/
         border: none !important;
     }
-
 
 </style>
 
@@ -620,7 +619,7 @@
 
 
 
-        <div class="jumbotron page" id="page2" style="background-color: white; padding: 15px 0; margin-bottom: 5px;">
+        <div class="jumbotron page" id="page2" style="background-color: transparent; padding: 15px 0; margin-bottom: 5px;">
 
             <div class="workshops-row-container">
                 <div class="workshops-row-image-container">
@@ -730,7 +729,7 @@
         </div>
 
 
-        <div class="jumbotron page" id="page3" style="background-color: white; padding: 15px 0; margin-bottom: 5px;">
+        <div class="jumbotron page" id="page3" style="background-color: transparent; padding: 15px 0; margin-bottom: 5px;">
 
             <!-- enero 2019 -->
             <div class="workshops-row-container">
@@ -836,7 +835,7 @@
 
         </div>
 
-        <div class="jumbotron page" id="page4" style="background-color: white; padding: 15px 0; margin-bottom: 5px;">
+        <div class="jumbotron page" id="page4" style="background-color: transparent; padding: 15px 0; margin-bottom: 5px;">
             <div class="workshops-row-container">
                 <div class="workshops-row-image-container">
                     <img src="https://citadancingrivers.s3-us-west-1.amazonaws.com/img/gota-background.png"  class="workshop-image">
@@ -893,6 +892,14 @@
 <script>
 
     $('#pagination-demo').twbsPagination({
+
+        /*totalPages: 35,
+        visiblePages: 7,
+        onPageClick: function (event, page) {
+            $('#page-content').text('Page ' + page);
+        }*/
+
+
         totalPages: 4,
 // the current page that show on start
         startPage: 1,
@@ -913,6 +920,12 @@
         prev: '<',
         next: '>',
         last: '>>',
+
+        /*first: '1',
+        prev: '2',
+        next: '3',
+        last: '4',*/
+
 
 // carousel-style pagination
         loop: false,
